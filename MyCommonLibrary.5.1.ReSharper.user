@@ -9,25 +9,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:Entity.cs" caret="1238" fromTop="19" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:Customer.cs" caret="212" fromTop="7" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Internal/f:ExpressionAccessor.cs" caret="1193" fromTop="0" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Internal/f:AccessorCache.cs" caret="596" fromTop="10" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/f:DbExecutor.cs" caret="16237" fromTop="10" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/f:Class1.cs" caret="3958" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:CodeTimer.cs" caret="4184" fromTop="0" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Dapper/f:Dapper.cs" caret="46669" fromTop="17" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="579" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:IEntityValidator.cs" caret="1076" fromTop="16" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Fakes/f:ReadMe.txt" caret="60" fromTop="4" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:IWebHelper.cs" caret="0" fromTop="0" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:NetHelper.cs" caret="0" fromTop="0" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:WebHelper.cs" caret="661" fromTop="7" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:CookieHelper.cs" caret="442" fromTop="0" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="177" fromTop="7" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:FileHelperTest.cs" caret="361" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17511" fromTop="13" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="5696" fromTop="48" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ExcelHelper.cs" caret="148" fromTop="6" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:CommomConst.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ChineseLunisolar.cs" caret="0" fromTop="0" />
@@ -39,6 +20,25 @@
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="207" fromTop="1" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="2698" fromTop="20" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="284" fromTop="9" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:UnitOfWork.cs" caret="1318" fromTop="20" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:ObjectCollection.cs" caret="1395" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IUnitOfWork.cs" caret="0" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IPersistableCollection.cs" caret="0" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IObjectCollection.cs" caret="0" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:Entity.cs" caret="0" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:IdentityGenerator.cs" caret="0" fromTop="0" />
+      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:ValueObject.cs" caret="4989" fromTop="22" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:IMainBCUnitOfWork.cs" caret="1635" fromTop="23" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:MainBCUnitOfWork.cs" caret="1674" fromTop="16" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:BankAccountRepository.cs" caret="928" fromTop="30" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IReadOnlyRepository.cs" caret="434" fromTop="16" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:ISql.cs" caret="349" fromTop="12" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="469" fromTop="0" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="520" fromTop="16" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableExtensions.cs" caret="2258" fromTop="2" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="2004" fromTop="14" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:Repository.cs" caret="1872" fromTop="25" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ObjectHelper.cs" caret="629" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14628" fromTop="17" />
