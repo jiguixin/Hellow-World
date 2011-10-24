@@ -233,24 +233,104 @@ namespace Infrastructure.Crosscutting.Declaration
             //return rgx.IsMatch(str);
             return true;
         }
-
-        public static bool IsValidZip(string str, string gRCode)
+         
+        /// <summary>
+        /// 日期格式字符串判断
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static bool IsDateTime(this string str)
         {
-            // TODO: zip validation
-            //Debug.Fail("IsValidZip() not implemented");
-
-            //CultureInfo ci = Thread.CurrentThread.CurrentUICulture;
-            // should implement validation based on cultureinfo: USA, canada, China
-
-            return true;
+            bool result;
+            try
+            {
+                if (!string.IsNullOrEmpty(str))
+                {
+                    DateTime.Parse(str);
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
         }
 
-        public static bool IsValidatePassword(string str)
+        /// <summary>
+        /// 验证身份证号码
+        /// </summary>
+        /// <param name="Id">身份证号码</param>
+        /// <returns>验证成功为True，否则为False</returns>
+        public static bool CheckIDCard(this string Id)
         {
-            // TODO: zip validation
-            //Debug.Fail("IsValidatePassword() not implemented");
+            if (Id.Length == 18)
+            {
+                return ObjectExtendMethod.CheckIDCard18(Id);
+            }
+            return Id.Length == 15 && ObjectExtendMethod.CheckIDCard15(Id);
+        }
 
-            return true;
+        /// <summary>
+        /// 转换成 HTML code
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>string</returns>
+        public static string HtmlEncode(this string str)
+        {
+            str = str.Replace("&", "&amp;");
+            str = str.Replace("'", "''");
+            str = str.Replace("\"", "&quot;");
+            str = str.Replace(" ", "&nbsp;");
+            str = str.Replace("<", "&lt;");
+            str = str.Replace(">", "&gt;");
+            str = str.Replace("\n", "<br>");
+            return str;
+        }
+        /// <summary>
+        /// 解析html成 普通文本
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>string</returns>
+        public static string HtmlDecode(this string str)
+        {
+            str = str.Replace("<br>", "\n");
+            str = str.Replace("&gt;", ">");
+            str = str.Replace("&lt;", "<");
+            str = str.Replace("&nbsp;", " ");
+            str = str.Replace("&quot;", "\"");
+            return str;
+        }
+
+        /// <summary>
+        /// SQL注入字符清理
+        /// </summary>
+        /// <param name="sqlText"></param>
+        /// <returns></returns>
+        public static string SqlTextClear(this string sqlText)
+        {
+            if (sqlText == null)
+            {
+                return null;
+            }
+            if (sqlText == "")
+            {
+                return "";
+            }
+            sqlText = sqlText.Replace(",", "");
+            sqlText = sqlText.Replace("<", "");
+            sqlText = sqlText.Replace(">", "");
+            sqlText = sqlText.Replace("--", "");
+            sqlText = sqlText.Replace("'", "");
+            sqlText = sqlText.Replace("\"", "");
+            sqlText = sqlText.Replace("=", "");
+            sqlText = sqlText.Replace("%", "");
+            sqlText = sqlText.Replace(" ", "");
+            return sqlText;
         }
 
         #endregion
@@ -401,6 +481,77 @@ namespace Infrastructure.Crosscutting.Declaration
         {
             return source != Guid.Empty;
         }
+
+        #endregion
+
+        #region Helper
+
+        #region String Extension Helper
+
+        /// <summary>
+        /// 验证15位身份证号
+        /// </summary>
+        /// <param name="Id">身份证号</param>
+        /// <returns>验证成功为True，否则为False</returns>
+        private static bool CheckIDCard18(string Id)
+        {
+            long num = 0L;
+            if (!long.TryParse(Id.Remove(17), out num) || (double)num < Math.Pow(10.0, 16.0) || !long.TryParse(Id.Replace('x', '0').Replace('X', '0'), out num))
+            {
+                return false;
+            }
+            string text = "11x22x35x44x53x12x23x36x45x54x13x31x37x46x61x14x32x41x50x62x15x33x42x51x63x21x34x43x52x64x65x71x81x82x91";
+            if (text.IndexOf(Id.Remove(2)) == -1)
+            {
+                return false;
+            }
+            string s = Id.Substring(6, 8).Insert(6, "-").Insert(4, "-");
+            DateTime dateTime = default(DateTime);
+            if (!DateTime.TryParse(s, out dateTime))
+            {
+                return false;
+            }
+            string[] array = "1,0,x,9,8,7,6,5,4,3,2".Split(new char[]
+			{
+				','
+			});
+            string[] array2 = "7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2".Split(new char[]
+			{
+				','
+			});
+            char[] array3 = Id.Remove(17).ToCharArray();
+            int num2 = 0;
+            for (int i = 0; i < 17; i++)
+            {
+                num2 += int.Parse(array2[i]) * int.Parse(array3[i].ToString());
+            }
+            int num3 = -1;
+            Math.DivRem(num2, 11, out num3);
+            return !(array[num3] != Id.Substring(17, 1).ToLower());
+        }
+        /// <summary>
+        /// 验证18位身份证号
+        /// </summary>
+        /// <param name="Id">身份证号</param>
+        /// <returns>验证成功为True，否则为False</returns>
+        private static bool CheckIDCard15(string Id)
+        {
+            long num = 0L;
+            if (!long.TryParse(Id, out num) || (double)num < Math.Pow(10.0, 14.0))
+            {
+                return false;
+            }
+            string text = "11x22x35x44x53x12x23x36x45x54x13x31x37x46x61x14x32x41x50x62x15x33x42x51x63x21x34x43x52x64x65x71x81x82x91";
+            if (text.IndexOf(Id.Remove(2)) == -1)
+            {
+                return false;
+            }
+            string s = Id.Substring(6, 6).Insert(4, "-").Insert(2, "-");
+            DateTime dateTime = default(DateTime);
+            return DateTime.TryParse(s, out dateTime);
+        }
+
+        #endregion
 
         #endregion
 

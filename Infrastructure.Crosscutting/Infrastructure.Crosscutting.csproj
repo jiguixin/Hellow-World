@@ -44,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,6 +81,7 @@
     <Compile Include="Cryptography\ICrypto.cs" />
     <Compile Include="Declaration\ChineseLunisolar.cs" />
     <Compile Include="Declaration\CommomConst.cs" />
+    <Compile Include="Declaration\Enums.cs" />
     <Compile Include="Declaration\NameId.cs" />
     <Compile Include="Declaration\NameValue.cs" />
     <Compile Include="Declaration\ObjectExtendMethod.cs" />
@@ -108,7 +110,9 @@
     <Compile Include="Utility\CommomHelper\HttpHelper.cs" />
     <Compile Include="Utility\CommomHelper\ObjectHelper.cs" />
     <Compile Include="Utility\CommomHelper\OleDbHelper.cs" />
+    <Compile Include="Utility\CommomHelper\PicDealHelper.cs" />
     <Compile Include="Utility\CommomHelper\RegHelper.cs" />
+    <Compile Include="Utility\CommomHelper\RmbHelper.cs" />
     <Compile Include="Utility\CommomHelper\SerializeHelper.cs" />
     <Compile Include="Utility\CommomHelper\SqlHelper.cs" />
     <Compile Include="Utility\CommomHelper\TextHelper.cs" />

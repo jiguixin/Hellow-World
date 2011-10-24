@@ -9,27 +9,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:BankAccountActivity.cs" caret="1485" fromTop="17" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:BankAccount.cs" caret="9791" fromTop="28" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:BankAccountRepositoryTests.cs" caret="410" fromTop="3" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:IMainBCUnitOfWork.cs" caret="1635" fromTop="21" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:BankAccountRepository.cs" caret="1427" fromTop="34" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/d:Mapping/f:BankAccountEntityTypeConfiguration.cs" caret="311" fromTop="10" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:Initializers/f:MainBCUnitOfWorkInitializer.cs" caret="561" fromTop="0" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:Initializers/f:AssemblyTestsInitializer.cs" caret="478" fromTop="16" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Internal/f:IMemberAccessor.cs" caret="896" fromTop="17" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Internal/f:KeyIndexed.cs" caret="786" fromTop="16" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:ReadMe.txt" caret="151" fromTop="4" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:MainBCUnitOfWork.cs" caret="5922" fromTop="24" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextBuilder.cs" caret="169" fromTop="5" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:TestDbContextManager.cs" caret="1722" fromTop="7" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextStorage.cs" caret="2660" fromTop="23" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="2211" fromTop="47" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="1005" fromTop="0" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableExtensions.cs" caret="984" fromTop="0" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="1290" fromTop="3" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:Repository.cs" caret="9394" fromTop="51" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextStorageBase.cs" caret="958" fromTop="18" />
       <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:Entity.cs" caret="1238" fromTop="19" />
       <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:Customer.cs" caret="212" fromTop="7" />
       <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Internal/f:ExpressionAccessor.cs" caret="1193" fromTop="0" />
@@ -39,38 +18,59 @@
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:CodeTimer.cs" caret="4184" fromTop="0" />
       <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Dapper/f:Dapper.cs" caret="46669" fromTop="17" />
       <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="579" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:IEntityValidator.cs" caret="1076" fromTop="16" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Fakes/f:ReadMe.txt" caret="60" fromTop="4" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:IWebHelper.cs" caret="0" fromTop="0" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:NetHelper.cs" caret="0" fromTop="0" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:WebHelper.cs" caret="661" fromTop="7" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:CookieHelper.cs" caret="442" fromTop="0" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="177" fromTop="7" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:FileHelperTest.cs" caret="361" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17511" fromTop="13" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="5696" fromTop="48" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ExcelHelper.cs" caret="148" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:CommomConst.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ChineseLunisolar.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:NameValue.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:PageParam.cs" caret="0" fromTop="0" />
+      <File id="09AAF2C8-47DC-4F12-A3A0-130DCDB1495B/d:Declaration/f:Enums.cs" caret="170" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="207" fromTop="1" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="2698" fromTop="20" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="284" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/f:DbExecutor.cs" caret="23818" fromTop="24" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/f:DbExecutor.cs" caret="23716" fromTop="11" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/f:Class1.cs" caret="9632" fromTop="19" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="2874" fromTop="5" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:ReadMe.txt" caret="151" fromTop="4" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:TestDbContextManager.cs" caret="1972" fromTop="18" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:MainBCUnitOfWork.cs" caret="6220" fromTop="30" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="312" fromTop="9" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextBuilder.cs" caret="169" fromTop="5" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextStorage.cs" caret="114" fromTop="2" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:TestDbContextManager.cs" caret="136" fromTop="3" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:TestDbContextManager.cs" caret="1731" fromTop="7" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="3350" fromTop="90" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextStorage.cs" caret="998" fromTop="11" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextStorageBase.cs" caret="958" fromTop="25" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextStorageBase.cs" caret="184" fromTop="5" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextStorageBase.cs" caret="1914" fromTop="26" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Dapper/f:Dapper.cs" caret="94230" fromTop="2116" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/d:Dapper/f:Dapper.cs" caret="321" fromTop="6" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="434" fromTop="13" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="218" fromTop="6" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="2653" fromTop="5" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="4032" fromTop="83" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="2585" fromTop="26" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="2510" fromTop="26" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="2466" fromTop="34" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="568" fromTop="11" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="1586" fromTop="21" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="1466" fromTop="19" />
-      <File id="6F19EDB3-5775-41C7-9961-6585904046F1/d:Dapper/f:Class1.cs" caret="2372" fromTop="26" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14628" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14482" fromTop="8" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14628" fromTop="13" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17479" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="668" fromTop="10" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="10691" fromTop="21" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="991" fromTop="12" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17520" fromTop="13" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="574" fromTop="18" />
+      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="5696" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="47" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6150" fromTop="34" />
+      <File id="09AAF2C8-47DC-4F12-A3A0-130DCDB1495B/d:Declaration/f:Enums.cs" caret="2784" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="556" fromTop="28" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6146" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="591" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="525" fromTop="8" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="3327" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="4270" fromTop="14" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="4814" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="73" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="285" fromTop="7" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="234" fromTop="7" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="579" fromTop="22" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="574" fromTop="22" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -92,31 +92,31 @@
       <Item value="Crosscutting" priority="1" />
       <Item value="Declaration" priority="1" />
       <Item value="GetSet`0" priority="0" />
-      <Item value="foreach" priority="6" />
+      <Item value="foreach" priority="7" />
       <Item value="Add`0" priority="0" />
       <Item value="item" priority="0" />
-      <Item value="this" priority="23" />
+      <Item value="this" priority="24" />
       <Item value="entity" priority="0" />
       <Item value="interface" priority="0" />
       <Item value="class" priority="2" />
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="52" />
+      <Item value="public" priority="55" />
       <Item value="return" priority="11" />
       <Item value="new" priority="50" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
-      <Item value="void" priority="20" />
-      <Item value="Console`0" priority="16" />
-      <Item value="Test" priority="10" />
+      <Item value="void" priority="23" />
+      <Item value="Console`0" priority="19" />
+      <Item value="Test" priority="13" />
       <Item value="Log4NetFactory" priority="0" />
       <Item value="factory" priority="21" />
       <Item value="null" priority="24" />
       <Item value="ILogger`0" priority="0" />
       <Item value="LoggerFactory`0" priority="0" />
       <Item value="try" priority="2" />
-      <Item value="throw" priority="1" />
+      <Item value="throw" priority="2" />
       <Item value="Exception" priority="0" />
       <Item value="ex" priority="1" />
       <Item value="NUnit.Framework" priority="0" />
@@ -130,9 +130,9 @@
       <Item value="ICacheManager`0" priority="0" />
       <Item value="_cacheManager" priority="4" />
       <Item value="e" priority="0" />
-      <Item value="string" priority="24" />
+      <Item value="string" priority="25" />
       <Item value="int" priority="7" />
-      <Item value="true" priority="4" />
+      <Item value="true" priority="5" />
       <Item value="enum" priority="0" />
       <Item value="MyEnum`0" priority="0" />
       <Item value="Exception`0" priority="2" />
@@ -154,7 +154,7 @@
       <Item value="Telephone" priority="1" />
       <Item value="ZipCode" priority="0" />
       <Item value="Customer`0" priority="1" />
-      <Item value="var" priority="25" />
+      <Item value="var" priority="26" />
       <Item value="Picture" priority="0" />
       <Item value="ImgPath" priority="0" />
       <Item value="exp" priority="1" />
@@ -171,7 +171,7 @@
       <Item value="false" priority="2" />
       <Item value="myEnginee" priority="0" />
       <Item value="memoryCache" priority="1" />
-      <Item value="s" priority="0" />
+      <Item value="s" priority="1" />
       <Item value="connection" priority="9" />
       <Item value="System" priority="3" />
       <Item value="Data" priority="5" />
@@ -272,7 +272,7 @@
       <Item value="Constraint`0" priority="0" />
       <Item value="strs" priority="1" />
       <Item value="Length" priority="0" />
-      <Item value="decimal" priority="0" />
+      <Item value="decimal" priority="1" />
       <Item value="Id" priority="0" />
       <Item value="IdentityGenerator`0" priority="0" />
       <Item value="IsEnabled" priority="1" />
@@ -296,9 +296,14 @@
       <Item value="IDbContextStorage`0" priority="0" />
       <Item value="Ado" priority="0" />
       <Item value="Dapper" priority="0" />
-      <Item value="lst" priority="0" />
+      <Item value="lst" priority="1" />
       <Item value="Guid`0" priority="0" />
       <Item value="sql" priority="1" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="FileAssert`0" priority="0" />
+      <Item value="FileHelper`0" priority="1" />
+      <Item value="RmbHelperTest`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
       <Item value="Delete`0" priority="0" />
@@ -310,7 +315,7 @@
       <Item value="Error`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="16" />
+      <Item value="WriteLine`0" priority="19" />
       <Item value="Write`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Crosscutting.NetFramework.Logging.Log4Net.Log4NetFactory">
@@ -570,6 +575,17 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
       <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.FileHelper">
+      <Item value="GetFileNames`0" priority="0" />
+      <Item value="CopyFolder`0" priority="0" />
+      <Item value="DeleteDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.RmbHelper">
+      <Item value="CmycurD`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

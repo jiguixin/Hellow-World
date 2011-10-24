@@ -91,7 +91,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Utility\CommomHelper\CookieHelper.cs" />
     <Compile Include="Utility\CommomHelper\IWebHelper.cs" />
+    <Compile Include="Utility\CommomHelper\JavaScriptHelper.cs" />
     <Compile Include="Utility\CommomHelper\NetHelper.cs" />
     <Compile Include="Utility\CommomHelper\WebHelper.cs" />
     <Compile Include="Utility\SessionManage.cs" />
