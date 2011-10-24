@@ -1,0 +1,15 @@
+E:\学习\MyCode\NLayerApp0817\NLayerApp0817\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.dll
+E:\学习\MyCode\NLayerApp0817\NLayerApp0817\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.pdb
+E:\学习\MyCode\NLayerApp0817\NLayerApp0817\Infrastructure.CrossCutting.Winfrom\obj\Debug\ResolveAssemblyReference.cache
+E:\学习\MyCode\NLayerApp0817\NLayerApp0817\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.dll
+E:\学习\MyCode\NLayerApp0817\NLayerApp0817\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.pdb
+F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.dll
+F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.pdb
+F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\ResolveAssemblyReference.cache
+F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.dll
+F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\bin\Debug\Infrastructure.CrossCutting.Winfrom.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Winfrom\obj\Debug\Infrastructure.CrossCutting.Winfrom.pdb

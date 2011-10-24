@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\program files\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="Infrastructure.Crosscutting.IoC">
+   <Messages>
+    <Message Id="Io" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-09-12 14:50:55Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="85" Level="Error">更正命名空间名称“Infrastructure.Crosscutting.IoC”中“Io”的大小写，将其改为“IO”。</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="F:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting\bin\Debug\Infrastructure.Crosscutting.dll">
+   <Modules>
+    <Module Name="infrastructure.crosscutting.dll">
+     <Namespaces>
+      <Namespace Name="Infrastructure.Crosscutting.IoC">
+       <Types>
+        <Type Name="IInstanceLocator" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsTypeRegistered`1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2011-09-12 14:50:55Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">考虑使用 'IInstanceLocator.IsTypeRegistered&lt;T&gt;()' 在任何对它的调用中都不需要显式类型参数 'T' 的设计。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegisterType`1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2011-09-12 14:50:55Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">考虑使用 'IInstanceLocator.RegisterType&lt;T&gt;()' 在任何对它的调用中都不需要显式类型参数 'T' 的设计。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InstanceLocator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsTypeRegistered`1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2011-09-12 14:50:55Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting\IoC" File="InstanceLocator.cs" Line="46">考虑使用 'InstanceLocator.IsTypeRegistered&lt;T&gt;()' 在任何对它的调用中都不需要显式类型参数 'T' 的设计。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegisterType`1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2011-09-12 14:50:55Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting\IoC" File="InstanceLocator.cs" Line="36">考虑使用 'InstanceLocator.RegisterType&lt;T&gt;()' 在任何对它的调用中都不需要显式类型参数 'T' 的设计。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004">
+   <Name>泛型方法应提供类型参数</Name>
+   <Description>以下方法令人难以理解，在这些方法中，类型参数无法从参数中推理出来，因此必须在方法调用中定义。如果方法带有类型化为泛型方法类型参数的形参，则这些方法支持推理；如果方法没有类型化为泛型方法类型参数的形参，则这些方法不支持推理。</Description>
+   <Resolution Name="Default">考虑使用 {0} 在任何对它的调用中都不需要显式类型参数 {1} 的设计。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182150(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>标识符的大小写应当正确</Name>
+   <Description>类型、命名空间和成员标识符应采用 Pascal 大小写格式。参数标识符应采用 Camel 大小写格式。这些标识符内由两个字母组成的首字母缩略词应全部大写，例如，应采用 System.IO，而不是 System.Io。由三个或更多个字母组成的首字母缩略词应采用 Pascal 大小写格式，例如，应采用 System.Xml，而不是 System.XML。Pascal 大小写格式约定每个单词的首字母大写，如 BackColor。Camel 大小写格式约定第一个单词的首字母小写，所有后续单词的首字母都大写，如 backgroundColor。尽管有些由两个字母组成的首字母缩略词习惯采用不完全大写形式，但不能因此而排斥此规则。例如，“DbConnection”很常见，但并不正确，应采用 DBConnection。为了与现有的非托管符号方案兼容，可能需要违反此规则。但一般来说，这些符号在使用它们的程序集之外不可见。</Description>
+   <Resolution Name="Namespace">更正命名空间名称“{1}”中“{0}”的大小写，将其改为“{2}”。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

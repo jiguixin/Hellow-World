@@ -1,0 +1,19 @@
+<Modules>
+  <Module PersistentId="106C7F00-C03F-4E29-87AF-ACD1BA292078" ModuleId="Infrastructure.Crosscutting" />
+  <Module PersistentId="7F302C0B-7C20-4CED-8E9A-C35E28C81889" ModuleId="Infrastructure.Crosscutting.Tests" />
+  <Module PersistentId="81CAB7AA-5235-42DB-82E6-2B4A0A1F9987" ModuleId="Infrastructure.Crosscutting.NetFramework" />
+  <Module PersistentId="04D675A3-B794-44BD-A25C-673BB44739CB" ModuleId="Domain.Seedwork" />
+  <Module PersistentId="5183434D-BBD0-47FE-9ECE-A58C4AF5E914" ModuleId="Domain.Seedwork.Tests" />
+  <Module PersistentId="09AAF2C8-47DC-4F12-A3A0-130DCDB1495B" ModuleId="Infrastructure.Data.Seedwork" />
+  <Module PersistentId="4C9F89CE-4D69-4CC9-B8AB-602CC69D1549" ModuleId="Infrastructure.CrossCutting.IoC" />
+  <Module PersistentId="DA3104C8-3CA7-4A8E-A434-E9A64D5A490A" ModuleId="Infrastructure.CrossCutting.Wpf" />
+  <Module PersistentId="DEE5E8A5-D459-4077-AF31-9F184A20BF79" ModuleId="Infrastructure.CrossCutting.Web" />
+  <Module PersistentId="1B99F045-E694-4590-9308-3549A65CE3C0" ModuleId="Infrastructure.Data.Core" />
+  <Module PersistentId="E2029314-D463-46F3-8293-EB045E5CF17A" ModuleId="Infrastructure.Data.EF" />
+  <Module PersistentId="D5A24C13-39D3-4A38-84B0-1DD28F2A26A3" ModuleId="Infrastructure.Data.NHibernate" />
+  <Module PersistentId="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA" ModuleId="Infrastructure.Data.Ado" />
+  <Module PersistentId="3A5063AC-F115-4849-8113-1DE1AACD61B7" ModuleId="Infrastructure.CrossCutting.Web.Mvc" />
+  <Module PersistentId="B8E1E08A-F3BF-40C4-8C56-7887CE50C2CE" ModuleId="Infrastructure.CrossCutting.Web.Sl" />
+  <Module PersistentId="6F19EDB3-5775-41C7-9961-6585904046F1" ModuleId="Infrastructure.Data.Ado.Test" />
+  <Module PersistentId="49060B66-B145-4425-BD2A-1848072F7E1D" ModuleId="Infrastructure.Data.Ef.Test" />
+</Modules>
