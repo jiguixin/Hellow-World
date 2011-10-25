@@ -14,5 +14,5 @@ V_0.1.0,2011-10-20 16:02 修改了DbExecutor可以直接接收SqlParameter参数
 V_0.1.1,2011-10-21 15:02 在ado.net类库中增加了Dopper组件类，经过测试发现Dopper还没有DbExecutor快，同时在EF中增加了DbContextManager类。
 
 不哈。s 要，该了。
-要不
+要不123
 不哈。我在服务器上已经进行了修改
