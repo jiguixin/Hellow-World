@@ -4,29 +4,29 @@ using System.Data.Entity;
 namespace Infrastructure.Data.Ef.DbContextProvider
 {
     /// <summary>
-    /// DbContext仓库接口
+    /// DbContext数据仓库接口
     /// </summary>
     public interface IDbContextStorage
     {
         /// <summary>
-        /// 根据key获取DbContext
+        /// 根据KEY获取DbContext
         /// </summary>
-        /// <param name="key">key</param>
+        /// <param name="key">KEY</param>
         /// <returns>DbContext</returns>
         DbContext GetByKey(string key);
 
         /// <summary>
-        /// 根据Key将DbContext写入Storage
-        /// </summary>  
-        /// <param name="key">Key</param>
-        /// <param name="dbContext">DbContext</param>
-        void SetByKey(string key, DbContext dbContext);
+        /// 根据KEY保存DbContext到仓库
+        /// </summary>
+        /// <param name="key">KEY</param>
+        /// <param name="context">DbContext</param>
+        void SetByKey(string key, DbContext context);
 
         /// <summary>
-        /// 获取所有DDbContext
+        /// 获取所有DbContext
         /// </summary>
-        /// <returns>所有DDbContext</returns>
-        IEnumerable<DbContext> GetAllDbContexts();
+        /// <returns>DbContext列表</returns>
+        IEnumerable<DbContext> GetAll();
     }
 
     //该接口的实现方式如下：

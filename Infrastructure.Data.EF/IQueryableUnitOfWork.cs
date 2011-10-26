@@ -12,6 +12,7 @@
 
 
 using System.Data.Entity;
+using System.Data.Objects;
 using Infrastructure.Data.Core;
 
 namespace Infrastructure.Data.Ef
@@ -25,14 +26,8 @@ namespace Infrastructure.Data.Ef
     public interface IQueryableUnitOfWork
         :IUnitOfWork,ISql
     {
-        /// <summary>
-        /// Returns a IDbSet instance for access to entities of the given type in the context, 
-        /// the ObjectStateManager, and the underlying store. 
-        /// </summary>
-        /// <typeparam name="TValueObject"></typeparam>
-        /// <returns></returns>
-        IDbSet<TEntity> CreateSet<TEntity>() where TEntity : class;
-
+        void SaveChanges(SaveOptions saveOptions);
+          
         /// <summary>
         /// Attach this item into "ObjectStateManager"
         /// </summary>

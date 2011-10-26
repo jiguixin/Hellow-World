@@ -51,10 +51,11 @@
     <Compile Include="DbContextProvider\DbContextStorageBase.cs" />
     <Compile Include="DbContextProvider\IDbContextBuilder.cs" />
     <Compile Include="DbContextProvider\IDbContextStorage.cs" />
+    <Compile Include="EfRepository.cs" />
+    <Compile Include="EfUnitOfWork.cs" />
     <Compile Include="IQueryableExtensions.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository.cs" />
     <Compile Include="Resources\Messages.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

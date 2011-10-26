@@ -7,14 +7,14 @@ using System.Text;
 namespace Infrastructure.Data.Ef.DbContextProvider
 {
     /// <summary>
-    /// DbContext组装接口
+    /// DbContext动态组装器接口
     /// </summary>
-    public interface IDbContextBuilder<T> where T : DbContext
+    internal interface IDbContextBuilder
     {
         /// <summary>
-        /// 组装DbContext
+        /// 创建DbContext
         /// </summary>
-        /// <returns>DbContext</returns>
-        T BuildDbContext();
+        /// <returns></returns>
+        DbContext BuildDbContext();
     }
 }

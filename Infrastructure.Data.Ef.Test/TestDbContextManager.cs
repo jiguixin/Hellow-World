@@ -49,17 +49,10 @@ namespace Infrastructure.Data.Ef.Test
         public void GenerateDbContext()
         {
             //目前没有发现可测试性
-            TestDbContext db = new TestDbContext("", "", "", true, false);
+ 
             
         }
 
-    }
-
-    public class TestDbContext:DbContextBuilder<DbContext>
-    {
-        public TestDbContext(string connectionStringName, string mappingAssemblyPath, string mappingNamespace, bool recreateDatabaseIfExists, bool lazyLoadingEnabled) : base(connectionStringName, mappingAssemblyPath, mappingNamespace, recreateDatabaseIfExists, lazyLoadingEnabled)
-        {
-        }
     }
      
 }

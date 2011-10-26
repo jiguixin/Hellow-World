@@ -6,7 +6,7 @@ using Domain.Seedwork.Specification;
 
 namespace Infrastructure.Data.Core
 {
-    public interface IRepository<TEntity>
+    public interface IRepository<TEntity>:ISql
         where TEntity : Entity
     {
         /// <summary>
@@ -27,33 +27,56 @@ namespace Infrastructure.Data.Core
         void Remove(TEntity item);
 
         /// <summary>
-        ///Track entity into this repository, really in UnitOfWork. 
-        ///In EF this can be done with Attach and with Update in NH
+        /// 根据条件删除
         /// </summary>
-        /// <param name="item">Item to attach</param>
-        void TrackItem(TEntity item);
-
+        /// <param name="predicate">查询条件表达式</param>
+        void Remove(Expression<Func<TEntity, bool>> predicate);
+         
         /// <summary>
-        /// Sets modified entity into the repository. 
-        /// When calling Commit() method in UnitOfWork 
-        /// these changes will be saved into the storage
+        /// 修改实体
         /// </summary>
-        /// <param name="persisted">The persisted item</param>
-        /// <param name="current">The current item</param>
-        void Merge(TEntity persisted, TEntity current);
-
+        /// <param name="item"></param>
+        void Modify(TEntity item);
+         
         /// <summary>
         /// Get element by entity key
         /// </summary>
-        /// <param name="entityKeyValues">entity key values, the order the are same of order in mapping.</param>
+        /// <param name="id">entity key values, the order the are same of order in mapping.</param>
         /// <returns></returns>
         TEntity Get(Guid id);
 
+        /// <summary>
+        /// 根据条件获取唯一的实体
+        /// </summary>
+        /// <param name="predicate">查询条件表达式</param>
+        /// <returns>实体</returns>
+        TEntity SingleOrDefault(Expression<Func<TEntity, bool>> predicate);
+
+        /// <summary>
+        /// 根据条件获取第一条实体
+        /// </summary>
+        /// <param name="predicate">查询条件表达式</param>
+        /// <returns>实体</returns>
+        TEntity FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
+         
         /// <summary>
         /// Get all elements of type {T} in repository
         /// </summary>
         /// <returns>List of selected elements</returns>
         IEnumerable<TEntity> GetAll();
+
+        /// <summary>
+        /// 获取总数
+        /// </summary>
+        /// <returns>总数</returns>
+        int Count();
+
+        /// <summary>
+        /// 根据条件获取总数
+        /// </summary>
+        /// <param name="predicate">查询条件表达式</param>
+        /// <returns>总数</returns>
+        int Count(Expression<Func<TEntity, bool>> predicate);
 
         /// <summary>
         /// Get all elements of type {T} that matching a

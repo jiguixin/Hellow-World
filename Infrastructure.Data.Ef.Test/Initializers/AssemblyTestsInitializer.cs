@@ -15,8 +15,8 @@ namespace Infrastructure.Data.Ef.Test.Initializers
         /// <param name="context"></param> 
         public static void RebuildUnitOfWork()
         {
-            //Set default initializer for MainBCUnitOfWork
-            Database.SetInitializer<MainBCUnitOfWork>(new MainBCUnitOfWorkInitializer());
+            //Set default initializer for MainBCUnitOfWork 
+            Database.SetInitializer<MainBCUnitOfWork>(new MainBCUnitOfWorkInitializer()); 
         }
     }
 }

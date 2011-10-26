@@ -10,79 +10,83 @@ using System.Reflection;
 
 namespace Infrastructure.Data.Ef.DbContextProvider
 {
-    public class DbContextBuilder<T> : DbModelBuilder, IDbContextBuilder<T> where T : DbContext
+    /// <summary>
+    /// DbContext动态组建类
+    /// </summary>
+    internal class DbContextBuilder : DbModelBuilder, IDbContextBuilder
     {
-        // 数据库客户端ProviderFactory
-        private readonly DbProviderFactory _factory;
-        // 连接字符串配置
-        private readonly ConnectionStringSettings _cnStringSettings;
-        // 如果数据库不存在是否创建
+        // 数据库Provider
+        private readonly DbProviderFactory _dbProviderFactory;
+        // 连接字符串配置信息
+        private readonly ConnectionStringSettings _connectionStringSettings;
+        // 当存在数据库时,是否重新创建
         private readonly bool _recreateDatabaseIfExists;
-        // 是否LazyLoad
+        // 是否延迟加载
         private readonly bool _lazyLoadingEnabled;
 
-        public DbContextBuilder(string connectionStringName, string mappingAssemblyPath, string mappingNamespace, bool recreateDatabaseIfExists = false, bool lazyLoadingEnabled = true)
+        public DbContextBuilder(string connectionStringName, string mappingAssemblyPath, string mappingNamespace,
+                                bool recreateDatabaseIfExists, bool lazyLoadingEnabled)
         {
             this.Conventions.Remove<IncludeMetadataConvention>();
-
-            _cnStringSettings = ConfigurationManager.ConnectionStrings[connectionStringName];
-            _factory = DbProviderFactories.GetFactory(_cnStringSettings.ProviderName);
+            _connectionStringSettings = ConfigurationManager.ConnectionStrings[connectionStringName];
+            _dbProviderFactory = DbProviderFactories.GetFactory(_connectionStringSettings.ProviderName);
             _recreateDatabaseIfExists = recreateDatabaseIfExists;
             _lazyLoadingEnabled = lazyLoadingEnabled;
 
             AddConfigurations(mappingAssemblyPath, mappingNamespace);
         }
 
+        /// <summary>
+        /// 新增DbContext的相关映射配置
+        /// </summary>
+        /// <param name="mappingAssemblyPath">相关映射配置类所在DLL路径</param>
+        /// <param name="mappingNamespace">相关映射配置类所在命名空间</param>
         private void AddConfigurations(string mappingAssemblyPath, string mappingNamespace)
         {
-            if (string.IsNullOrEmpty(mappingAssemblyPath))
-                throw new ArgumentNullException("mappingAssemblyPath");
-
-            if (string.IsNullOrEmpty(mappingNamespace))
-                throw new ArgumentNullException("mappingNamespace");
-
-            var hashMapping = false;
-            // 关键代码
             var asm = Assembly.LoadFrom(GetAssemblyPath(mappingAssemblyPath));
-            foreach (var type in asm.GetTypes().Where(c =>
-                !c.IsAbstract
-                && c.BaseType != null
-                && c.BaseType.IsGenericType
-                && c.BaseType.GetGenericTypeDefinition() == typeof(EntityTypeConfiguration<>))
-                )
+            if (asm == null)
+                throw new ApplicationException(string.Format("找不到映射配置类DLL,路径:{0}", mappingAssemblyPath));
+
+            var types = asm.GetTypes()
+                .Where(c =>
+                       !string.IsNullOrEmpty(c.Namespace)
+                       && c.Namespace.ToLower() == mappingNamespace.ToLower()
+                       && c.BaseType != null
+                       && c.BaseType.IsGenericType
+                       && c.BaseType.GetGenericTypeDefinition() == typeof(EntityTypeConfiguration<>)
+                ).ToList();
+
+            if (types.Count == 0)
+                throw new ApplicationException("没有找到映射配置类");
+
+            types.ForEach(c =>
             {
-                hashMapping = true;
-                dynamic configurationInstance = Activator.CreateInstance(type);
-                Configurations.Add(configurationInstance);
-            }
-
-            if (!hashMapping)
-                throw new ApplicationException("DbContext组装时，没有发现映射配置类");
+                dynamic configurationInstance = Activator.CreateInstance(c);
+                this.Configurations.Add(configurationInstance);
+            });
         }
 
-        private static string GetAssemblyPath(string assemblyName)
+        private static string GetAssemblyPath(string assemblyPath)
         {
-            return (assemblyName.IndexOf(".dll") == -1)
-                ? assemblyName.Trim() + ".dll"
-                : assemblyName.Trim();
+            return (assemblyPath.IndexOf(".dll") == -1)
+                       ? assemblyPath.Trim() + ".dll"
+                       : assemblyPath.Trim();
         }
 
-        #region Implementation of IDbContextBuilder<T>
+        #region Implementation of IDbContextBuilder
 
         /// <summary>
-        /// 组装DbContext
+        /// 创建DbContext
         /// </summary>
-        /// <returns>DbContext</returns>
-        public T BuildDbContext()
+        /// <returns></returns>
+        public DbContext BuildDbContext()
         {
-            // 关键代码
-            var cn = _factory.CreateConnection();
-            cn.ConnectionString = _cnStringSettings.ConnectionString;
+            var connection = _dbProviderFactory.CreateConnection();
+            connection.ConnectionString = _connectionStringSettings.ConnectionString;
 
-            var dbModel = this.Build(cn);
-
-            var ctx = dbModel.Compile().CreateObjectContext<ObjectContext>(cn);
-            ctx.ContextOptions.LazyLoadingEnabled = this._lazyLoadingEnabled;
+            var dbModel = this.Build(connection);
+ 
+            var ctx = dbModel.Compile().CreateObjectContext<ObjectContext>(connection);
 
             if (!ctx.DatabaseExists())
             {
@@ -94,7 +98,7 @@ namespace Infrastructure.Data.Ef.DbContextProvider
                 ctx.CreateDatabase();
             }
 
-            return (T)new DbContext(ctx, false);
+            return new DbContext(ctx, false);
         }
 
         #endregion

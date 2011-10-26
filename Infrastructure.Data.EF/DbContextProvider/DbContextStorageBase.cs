@@ -8,56 +8,36 @@ namespace Infrastructure.Data.Ef.DbContextProvider
 {
     public class DbContextStorageBase:IDbContextStorage
     {
-        // DbContext容器
         private Dictionary<string, DbContext> _storage = new Dictionary<string, DbContext>();
-
-        ///// <summary>
-        ///// 构造函数
-        ///// 用于注册HttpApplication.EndRequest事件，关闭数据库连接
-        ///// </summary>
-        ///// <param name="app"></param>
-        //public WebDbContextStorage(HttpApplication app)
-        //{
-        //    app.EndRequest += (sender, args) =>
-        //    {
-        //        foreach (var dbContext in GetAllDbContexts())
-        //        {
-        //            if (dbContext.Database.Connection.State == ConnectionState.Open)
-        //                dbContext.Database.Connection.Close();
-        //        }
-        //    };
-        //}
-
-
 
         #region Implementation of IDbContextStorage
 
         /// <summary>
-        /// 根据key获取DbContext
+        /// 根据KEY获取DbContext
         /// </summary>
-        /// <param name="key">key</param>
+        /// <param name="key">KEY</param>
         /// <returns>DbContext</returns>
         public DbContext GetByKey(string key)
         {
-            DbContext context;
-            return !_storage.TryGetValue(key, out context) ? null : context;
+            DbContext dbContext;
+            return _storage.TryGetValue(key, out dbContext) ? dbContext : null;
         }
 
         /// <summary>
-        /// 根据Key将DbContext写入Storage
+        /// 根据KEY保存DbContext到仓库
         /// </summary>
-        /// <param name="key">Key</param>
-        /// <param name="dbContext">DbContext</param>
-        public void SetByKey(string key, DbContext dbContext)
+        /// <param name="key">KEY</param>
+        /// <param name="context">DbContext</param>
+        public void SetByKey(string key, DbContext context)
         {
-            _storage.Add(key, dbContext);
+            _storage.Add(key, context);
         }
 
         /// <summary>
-        /// 获取所有DDbContext
+        /// 获取所有DbContext
         /// </summary>
-        /// <returns>所有DDbContext</returns>
-        public IEnumerable<DbContext> GetAllDbContexts()
+        /// <returns>DbContext列表</returns>
+        public IEnumerable<DbContext> GetAll()
         {
             return _storage.Values;
         }

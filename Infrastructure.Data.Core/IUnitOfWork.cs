@@ -1,33 +1,21 @@
-﻿using System; 
+﻿using System;
+using System.Data;
 
 namespace Infrastructure.Data.Core
 {
     public interface IUnitOfWork: IDisposable
     {
-        /// <summary>
-        /// Commit all changes made in a container.
-        /// </summary>
-        ///<remarks>
-        /// If the entity have fixed properties and any optimistic concurrency problem exists,  
-        /// then an exception is thrown
-        ///</remarks>
-        void Commit();
+        bool IsInTransaction { get; }
 
-        /// <summary>
-        /// Commit all changes made in  a container.
-        /// </summary>
-        ///<remarks>
-        /// If the entity have fixed properties and any optimistic concurrency problem exists,
-        /// then 'client changes' are refreshed - Client wins
-        ///</remarks>
-        void CommitAndRefreshChanges();
+        void SaveChanges();
+         
+        void BeginTransaction();
 
+        void BeginTransaction(IsolationLevel isolationLevel);
 
-        /// <summary>
-        /// Rollback changes are not stored in the database at 
-        /// this moment. See references of UnitOfWork pattern
-        /// </summary>
-        void RollbackChanges();
+        void RollBackTransaction();
+
+        void CommitTransaction();
 
 
     }

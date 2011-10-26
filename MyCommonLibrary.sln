@@ -79,6 +79,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Ado.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Ef.Test", "Infrastructure.Data.Ef.Test\Infrastructure.Data.Ef.Test.csproj", "{49060B66-B145-4425-BD2A-1848072F7E1D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Document", "0-Document", "{61ABA6BD-7AFA-41A4-9468-87CA42020C88}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

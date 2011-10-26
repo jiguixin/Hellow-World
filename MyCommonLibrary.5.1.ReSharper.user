@@ -9,68 +9,61 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ExcelHelper.cs" caret="148" fromTop="6" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:CommomConst.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ChineseLunisolar.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:NameValue.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:PageParam.cs" caret="0" fromTop="0" />
-      <File id="09AAF2C8-47DC-4F12-A3A0-130DCDB1495B/d:Declaration/f:Enums.cs" caret="170" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="207" fromTop="1" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="2698" fromTop="20" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="284" fromTop="9" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:UnitOfWork.cs" caret="1318" fromTop="20" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:ObjectCollection.cs" caret="1395" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IUnitOfWork.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IPersistableCollection.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:PersistenceModel/f:IObjectCollection.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:Entity.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:IdentityGenerator.cs" caret="0" fromTop="0" />
       <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:ValueObject.cs" caret="4989" fromTop="22" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:IMainBCUnitOfWork.cs" caret="1635" fromTop="23" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/f:MainBCUnitOfWork.cs" caret="1674" fromTop="16" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:BankAccountRepository.cs" caret="928" fromTop="30" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IReadOnlyRepository.cs" caret="434" fromTop="16" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ObjectHelper.cs" caret="1095" fromTop="30" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:IBankAccountRepository.cs" caret="0" fromTop="0" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:BankAccount.cs" caret="1187" fromTop="18" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextStorage.cs" caret="2346" fromTop="78" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:App.config" caret="536" fromTop="6" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextBuilder.cs" caret="411" fromTop="16" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:UnitOfWork/d:Mapping/f:BankAccountEntityTypeConfiguration.cs" caret="936" fromTop="28" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfCustomerRepository.cs" caret="597" fromTop="16" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="837" fromTop="11" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextStorageBase.cs" caret="597" fromTop="18" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="638" fromTop="19" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableExtensions.cs" caret="1101" fromTop="0" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="1092" fromTop="3" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IReadOnlyRepository.cs" caret="268" fromTop="10" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:ISql.cs" caret="349" fromTop="12" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="469" fromTop="0" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="520" fromTop="16" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableExtensions.cs" caret="2258" fromTop="2" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="2004" fromTop="14" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:Repository.cs" caret="1872" fromTop="25" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ObjectHelper.cs" caret="629" fromTop="8" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="392" fromTop="13" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfBankAccountRepository.cs" caret="557" fromTop="14" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1836" fromTop="23" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="1582" fromTop="16" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="26" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="121" fromTop="4" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="763" fromTop="14" />
     </RecentFiles>
     <RecentEdits>
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14628" fromTop="17" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14482" fromTop="8" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="14628" fromTop="13" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17479" fromTop="24" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="668" fromTop="10" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="10691" fromTop="21" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="991" fromTop="12" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:FileHelper.cs" caret="17520" fromTop="13" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="574" fromTop="18" />
-      <File id="DEE5E8A5-D459-4077-AF31-9F184A20BF79/d:Utility/d:CommomHelper/f:JavaScriptHelper.cs" caret="5696" fromTop="6" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="9" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="47" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6150" fromTop="34" />
-      <File id="09AAF2C8-47DC-4F12-A3A0-130DCDB1495B/d:Declaration/f:Enums.cs" caret="2784" fromTop="9" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="556" fromTop="28" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="17" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6145" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="6146" fromTop="6" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="591" fromTop="18" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="525" fromTop="8" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="3327" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="4270" fromTop="14" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PicDealHelper.cs" caret="4814" fromTop="17" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="73" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:RmbHelper.cs" caret="285" fromTop="7" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="234" fromTop="7" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="579" fromTop="22" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:RmbHelperTest.cs" caret="574" fromTop="22" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1162" fromTop="26" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfCustomerRepository.cs" caret="551" fromTop="15" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="3566" fromTop="25" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="3534" fromTop="28" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfBankAccountRepository.cs" caret="595" fromTop="16" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="952" fromTop="14" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="376" fromTop="7" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="2315" fromTop="20" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4232" fromTop="20" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4241" fromTop="25" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="231" fromTop="7" />
+      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="1114" fromTop="5" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3037" fromTop="12" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3466" fromTop="4" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4232" fromTop="13" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="348" fromTop="12" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8119" fromTop="25" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8120" fromTop="34" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8085" fromTop="24" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="7817" fromTop="18" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="660" fromTop="8" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="2350" fromTop="18" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3244" fromTop="19" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="760" fromTop="13" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="526" fromTop="9" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1471" fromTop="16" />
+      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1768" fromTop="23" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="20" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8120" fromTop="21" />
+      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="486" fromTop="3" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -95,19 +88,19 @@
       <Item value="foreach" priority="7" />
       <Item value="Add`0" priority="0" />
       <Item value="item" priority="0" />
-      <Item value="this" priority="24" />
+      <Item value="this" priority="25" />
       <Item value="entity" priority="0" />
       <Item value="interface" priority="0" />
       <Item value="class" priority="2" />
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="55" />
-      <Item value="return" priority="11" />
-      <Item value="new" priority="50" />
+      <Item value="public" priority="62" />
+      <Item value="return" priority="14" />
+      <Item value="new" priority="53" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
-      <Item value="void" priority="23" />
+      <Item value="void" priority="24" />
       <Item value="Console`0" priority="19" />
       <Item value="Test" priority="13" />
       <Item value="Log4NetFactory" priority="0" />
@@ -248,7 +241,7 @@
       <Item value="errMsg" priority="1" />
       <Item value="dr1" priority="3" />
       <Item value="drT" priority="1" />
-      <Item value="DateTime`0" priority="5" />
+      <Item value="DateTime`0" priority="6" />
       <Item value="dbProvider" priority="0" />
       <Item value="static" priority="4" />
       <Item value="dbProviderFactory" priority="0" />
@@ -290,7 +283,7 @@
       <Item value="par" priority="1" />
       <Item value="p" priority="1" />
       <Item value="IDbDataParameter`0" priority="0" />
-      <Item value="DbContext`0" priority="0" />
+      <Item value="DbContext`0" priority="5" />
       <Item value="TestDbContext`0" priority="0" />
       <Item value="TestDbContext" priority="0" />
       <Item value="IDbContextStorage`0" priority="0" />
@@ -304,6 +297,31 @@
       <Item value="FileAssert`0" priority="0" />
       <Item value="FileHelper`0" priority="1" />
       <Item value="RmbHelperTest`0" priority="0" />
+      <Item value="EfUnitOfWork`0" priority="0" />
+      <Item value="context" priority="1" />
+      <Item value="EfRepository" priority="0" />
+      <Item value="IUnitOfWork`0" priority="1" />
+      <Item value="DbContext" priority="2" />
+      <Item value="TEntity`0" priority="1" />
+      <Item value="DbSet" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="IBankAccountRepository`0" priority="0" />
+      <Item value="_bankAccountRepository" priority="2" />
+      <Item value="EfBankAccountRepository`0" priority="0" />
+      <Item value="DbContextProvider" priority="1" />
+      <Item value="DbContextManager`0" priority="1" />
+      <Item value="protected" priority="1" />
+      <Item value="override" priority="1" />
+      <Item value="bankAccountRepository" priority="0" />
+      <Item value="EfBankAccountRepository" priority="0" />
+      <Item value="customerRepository" priority="0" />
+      <Item value="EfCustomerRepository" priority="0" />
+      <Item value="dbModel" priority="0" />
+      <Item value="ctx" priority="0" />
+      <Item value="dbContext" priority="1" />
+      <Item value="ISql`0" priority="0" />
+      <Item value="bankAccount" priority="1" />
+      <Item value="IDisposable`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
       <Item value="Delete`0" priority="0" />
@@ -517,7 +535,7 @@
       <Item value="Clone`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="4" />
+      <Item value="Now" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="Select`2" priority="1" />
@@ -551,8 +569,9 @@
       <Item value="Property`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Test.BankingModule.Aggregates.BankAccountAgg.BankAccount">
-      <Item value="CreateTime" priority="0" />
+      <Item value="CreateTime" priority="1" />
       <Item value="State" priority="0" />
+      <Item value="BankAccountNumber" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration">
       <Item value="HasColumnType`0" priority="0" />
@@ -586,6 +605,26 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.RmbHelper">
       <Item value="CmycurD`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.EfUnitOfWork">
+      <Item value="_dbContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.DbContext">
+      <Item value="Set`0" priority="0" />
+      <Item value="Database" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbModel">
+      <Item value="Compile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbCompiledModel">
+      <Item value="CreateObjectContext`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Test.BankingModule.Aggregates.BankAccountAgg.IBankAccountRepository">
+      <Item value="UnitOfWork" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Core.IUnitOfWork">
+      <Item value="SaveChanges`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
