@@ -32,17 +32,10 @@
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="26" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="121" fromTop="4" />
       <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="763" fromTop="14" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="214" fromTop="9" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="644" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1162" fromTop="26" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfCustomerRepository.cs" caret="551" fromTop="15" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="3566" fromTop="25" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="3534" fromTop="28" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfBankAccountRepository.cs" caret="595" fromTop="16" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="952" fromTop="14" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="376" fromTop="7" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="2315" fromTop="20" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4232" fromTop="20" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4241" fromTop="25" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="231" fromTop="7" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="1114" fromTop="5" />
@@ -64,6 +57,15 @@
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="20" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8120" fromTop="21" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="486" fromTop="3" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="682" fromTop="20" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="682" fromTop="18" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="686" fromTop="21" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="652" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="17465" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="6659" fromTop="76" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="653" fromTop="12" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="243" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="15215" fromTop="24" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -95,14 +97,14 @@
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="62" />
+      <Item value="public" priority="64" />
       <Item value="return" priority="14" />
       <Item value="new" priority="53" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
-      <Item value="void" priority="24" />
-      <Item value="Console`0" priority="19" />
-      <Item value="Test" priority="13" />
+      <Item value="void" priority="25" />
+      <Item value="Console`0" priority="20" />
+      <Item value="Test" priority="14" />
       <Item value="Log4NetFactory" priority="0" />
       <Item value="factory" priority="21" />
       <Item value="null" priority="24" />
@@ -333,7 +335,7 @@
       <Item value="Error`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="19" />
+      <Item value="WriteLine`0" priority="20" />
       <Item value="Write`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Crosscutting.NetFramework.Logging.Log4Net.Log4NetFactory">

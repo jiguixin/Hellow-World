@@ -111,6 +111,7 @@
     <Compile Include="Utility\CommomHelper\ObjectHelper.cs" />
     <Compile Include="Utility\CommomHelper\OleDbHelper.cs" />
     <Compile Include="Utility\CommomHelper\PicDealHelper.cs" />
+    <Compile Include="Utility\CommomHelper\PinyinHelper.cs" />
     <Compile Include="Utility\CommomHelper\RegHelper.cs" />
     <Compile Include="Utility\CommomHelper\RmbHelper.cs" />
     <Compile Include="Utility\CommomHelper\SerializeHelper.cs" />
