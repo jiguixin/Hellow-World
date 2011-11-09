@@ -1,10 +1,10 @@
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\ResolveAssemblyReference.cache
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\bin\Debug\Infrastructure.Data.NHibernate.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.NHibernate\obj\Debug\Infrastructure.Data.NHibernate.pdb

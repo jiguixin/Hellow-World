@@ -14,3 +14,4 @@ V_0.1.0,2011-10-20 16:02 修改了DbExecutor可以直接接收SqlParameter参数
 V_0.1.1,2011-10-21 15:02 在ado.net类库中增加了Dopper组件类，经过测试发现Dopper还没有DbExecutor快，同时在EF中增加了DbContextManager类。
 V_0.1.2,2011-10-26 15:42 修改IRepository接口与修改Ef的DbContext的实现方式。
 V_0.1.2,2011-10-27 17:42 增加汉字转拼音帮助类。
+V_0.1.3,2011-11-9 11:06 增加HttpsHelper类主要是可能完成对HTTPS的请求帮助类。

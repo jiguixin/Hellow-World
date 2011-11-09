@@ -1,12 +1,3 @@
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Domain.Seedwork.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Crosscutting.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Domain.Seedwork.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Crosscutting.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Domain.Seedwork.dll
@@ -16,3 +7,12 @@ F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Cros
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\ResolveAssemblyReference.cache
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Data.Core.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Domain.Seedwork.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Crosscutting.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Domain.Seedwork.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\bin\Debug\Infrastructure.Crosscutting.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Core\obj\Debug\Infrastructure.Data.Core.pdb

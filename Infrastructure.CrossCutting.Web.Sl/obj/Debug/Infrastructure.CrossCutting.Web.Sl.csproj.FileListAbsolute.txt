@@ -1,10 +1,10 @@
-E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\ResolveAssemblyReference.cache
 F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\bin\Debug\Infrastructure.CrossCutting.Web.Sl.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.CrossCutting.Web.Sl\obj\Debug\Infrastructure.CrossCutting.Web.Sl.pdb

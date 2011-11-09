@@ -9,13 +9,6 @@ F:\MyCode\MyCommonLibrary\Domain.Seedwork\bin\Debug\Domain.Seedwork.dll
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\bin\Debug\Domain.Seedwork.pdb
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\bin\Debug\Domain.Seedwork.dll.CodeAnalysisLog.xml
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\bin\Debug\Domain.Seedwork.dll.lastcodeanalysissucceeded
-E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll
-E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.pdb
-E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.CodeAnalysisLog.xml
-E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.lastcodeanalysissucceeded
-E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.dll
-E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.pdb
 F:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll
 F:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.pdb
 F:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.CodeAnalysisLog.xml
@@ -23,3 +16,10 @@ F:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.lastcodeanalysissucceeded
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\ResolveAssemblyReference.cache
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.dll
 F:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.pdb
+E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll
+E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.pdb
+E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.CodeAnalysisLog.xml
+E:\MyCode\MyCommonLibrary\Output\Domain.Seedwork.dll.lastcodeanalysissucceeded
+E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.dll
+E:\MyCode\MyCommonLibrary\Domain.Seedwork\obj\Debug\Domain.Seedwork.pdb

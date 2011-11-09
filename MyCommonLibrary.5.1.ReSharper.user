@@ -9,10 +9,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:ValueObject.cs" caret="4989" fromTop="22" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ObjectHelper.cs" caret="1095" fromTop="30" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:IBankAccountRepository.cs" caret="0" fromTop="0" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Aggregates/f:BankAccount.cs" caret="1187" fromTop="18" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextStorage.cs" caret="2346" fromTop="78" />
       <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:App.config" caret="536" fromTop="6" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:IDbContextBuilder.cs" caret="411" fromTop="16" />
@@ -31,41 +27,50 @@
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="1582" fromTop="16" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="26" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="121" fromTop="4" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="763" fromTop="14" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="214" fromTop="9" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="644" fromTop="21" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.Designer.cs" caret="3550" fromTop="23" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="536" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpHelper.cs" caret="139" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ObjectHelper.cs" caret="200" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:ExcelHelper.cs" caret="613" fromTop="17" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:Program.cs" caret="111" fromTop="4" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="362" fromTop="4" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="428" fromTop="15" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:MyHttpHelper.cs" caret="10418" fromTop="92" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="858" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4241" fromTop="25" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="231" fromTop="7" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="1114" fromTop="5" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3037" fromTop="12" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3466" fromTop="4" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="4232" fromTop="13" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="348" fromTop="12" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8119" fromTop="25" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8120" fromTop="34" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8085" fromTop="24" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="7817" fromTop="18" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="660" fromTop="8" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="2350" fromTop="18" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="3244" fromTop="19" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="760" fromTop="13" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="526" fromTop="9" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1471" fromTop="16" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1768" fromTop="23" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="2777" fromTop="20" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="8120" fromTop="21" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="486" fromTop="3" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="682" fromTop="20" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="682" fromTop="18" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="686" fromTop="21" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="652" fromTop="20" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="17465" fromTop="34" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="6659" fromTop="76" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="653" fromTop="12" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="243" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:PinyinHelper.cs" caret="15215" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpHelper.cs" caret="14771" fromTop="7" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpHelper.cs" caret="14776" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpHelper.cs" caret="14778" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="0" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="21" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="31" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="25" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="853" fromTop="12" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="148" fromTop="4" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="536" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="12" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:Program.cs" caret="0" fromTop="0" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="0" fromTop="0" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1997" fromTop="18" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="2002" fromTop="14" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="2002" fromTop="16" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1424" fromTop="32" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="497" fromTop="10" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="2002" fromTop="12" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12663" fromTop="2" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="12664" fromTop="5" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:MyHttpHelper.cs" caret="381" fromTop="12" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1918" fromTop="20" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1584" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:HttpsHelper.cs" caret="362" fromTop="4" />
+      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="314" fromTop="11" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="854" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -82,29 +87,29 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="source" priority="0" />
-      <Item value="using" priority="24" />
-      <Item value="Infrastructure" priority="3" />
+      <Item value="using" priority="25" />
+      <Item value="Infrastructure" priority="4" />
       <Item value="Crosscutting" priority="1" />
       <Item value="Declaration" priority="1" />
       <Item value="GetSet`0" priority="0" />
       <Item value="foreach" priority="7" />
       <Item value="Add`0" priority="0" />
       <Item value="item" priority="0" />
-      <Item value="this" priority="25" />
+      <Item value="this" priority="26" />
       <Item value="entity" priority="0" />
       <Item value="interface" priority="0" />
       <Item value="class" priority="2" />
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="64" />
+      <Item value="public" priority="68" />
       <Item value="return" priority="14" />
-      <Item value="new" priority="53" />
+      <Item value="new" priority="56" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
-      <Item value="void" priority="25" />
-      <Item value="Console`0" priority="20" />
-      <Item value="Test" priority="14" />
+      <Item value="void" priority="26" />
+      <Item value="Console`0" priority="21" />
+      <Item value="Test" priority="15" />
       <Item value="Log4NetFactory" priority="0" />
       <Item value="factory" priority="21" />
       <Item value="null" priority="24" />
@@ -119,13 +124,13 @@
       <Item value="SetUp" priority="3" />
       <Item value="Rhino" priority="0" />
       <Item value="Rhino.Mocks" priority="0" />
-      <Item value="CrossCutting" priority="0" />
+      <Item value="CrossCutting" priority="1" />
       <Item value="Mocker`0" priority="0" />
       <Item value="MockRepository`0" priority="0" />
       <Item value="ICacheManager`0" priority="0" />
       <Item value="_cacheManager" priority="4" />
-      <Item value="e" priority="0" />
-      <Item value="string" priority="25" />
+      <Item value="e" priority="1" />
+      <Item value="string" priority="27" />
       <Item value="int" priority="7" />
       <Item value="true" priority="5" />
       <Item value="enum" priority="0" />
@@ -166,7 +171,7 @@
       <Item value="false" priority="2" />
       <Item value="myEnginee" priority="0" />
       <Item value="memoryCache" priority="1" />
-      <Item value="s" priority="1" />
+      <Item value="s" priority="2" />
       <Item value="connection" priority="9" />
       <Item value="System" priority="3" />
       <Item value="Data" priority="5" />
@@ -324,6 +329,15 @@
       <Item value="ISql`0" priority="0" />
       <Item value="bankAccount" priority="1" />
       <Item value="IDisposable`0" priority="0" />
+      <Item value="HttpHelps" priority="1" />
+      <Item value="h" priority="2" />
+      <Item value="Encoding`0" priority="1" />
+      <Item value="HttpHelps`0" priority="3" />
+      <Item value="Navigate`0" priority="0" />
+      <Item value="textBox1" priority="0" />
+      <Item value="webBrowser1" priority="1" />
+      <Item value="response" priority="0" />
+      <Item value="ExcelHelper" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
       <Item value="Delete`0" priority="0" />
@@ -335,7 +349,7 @@
       <Item value="Error`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="20" />
+      <Item value="WriteLine`0" priority="22" />
       <Item value="Write`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Crosscutting.NetFramework.Logging.Log4Net.Log4NetFactory">
@@ -627,6 +641,37 @@
     <ItemStatistics item="Qualified:Infrastructure.Data.Core.IUnitOfWork">
       <Item value="SaveChanges`0" priority="0" />
       <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpHelps">
+      <Item value="GetHttpRequestStringByNUll_Get`0" priority="0" />
+      <Item value="GetHttpRequestStringByNUll_GetBycookie`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="0" />
+      <Item value="Default" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.HttpHelper">
+      <Item value="GETDataToUrl`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HttpHelps">
+      <Item value="GetCookieString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.WebBrowser">
+      <Item value="Document" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="DocumentText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.HtmlDocument">
+      <Item value="Cookie" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.ExcelHelper">
+      <Item value="GetExcelData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.WinformTest.HttpHelps">
+      <Item value="GetCookieString`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

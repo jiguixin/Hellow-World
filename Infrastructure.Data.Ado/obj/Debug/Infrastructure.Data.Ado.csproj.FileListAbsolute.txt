@@ -1,8 +1,3 @@
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\Infrastructure.Data.Ado.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\Infrastructure.Data.Ado.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\CodeContracts\Infrastructure.Data.Ado.Contracts.dll
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\CodeContracts\Infrastructure.Data.Ado.Contracts.pdb
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\ResolveAssemblyReference.cache
@@ -19,6 +14,9 @@ F:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\Infrastructure.Data.
 F:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.rewritten
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\CodeContracts\Infrastructure.Data.Ado.Contracts.dll
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\CodeContracts\Infrastructure.Data.Ado.Contracts.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\Infrastructure.Data.Ado.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\bin\Debug\Infrastructure.Data.Ado.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\ResolveAssemblyReference.cache
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.Resources.Messages.resources
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\GenerateResource.read.1.tlog
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\GenerateResource.write.1.tlog
@@ -26,3 +24,5 @@ E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Decl\Infrastructure.
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Decl\Infrastructure.Data.Ado.pdb
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Adoccrefgen.rsp
 E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.rewritten
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.dll
+E:\MyCode\MyCommonLibrary\Infrastructure.Data.Ado\obj\Debug\Infrastructure.Data.Ado.pdb

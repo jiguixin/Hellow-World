@@ -1,0 +1,11 @@
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\bin\Debug\Infrastructure.Crosscutting.WinformTest.exe
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\bin\Debug\Infrastructure.Crosscutting.WinformTest.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.FrmWebBrowserTest.resources
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.Properties.Resources.resources
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MyCode\MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.WinformTest.exe
+E:\MyCode\MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.WinformTest.pdb
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.exe
+E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.pdb

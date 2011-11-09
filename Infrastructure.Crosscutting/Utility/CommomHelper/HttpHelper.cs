@@ -407,4 +407,6 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         //    return GetResponseContent(httpRequest);
         //}
     }
+     
 }
+

@@ -20,10 +20,10 @@ E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\bin\Debug\Domain.Seedwork.dll
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\bin\Debug\Infrastructure.Crosscutting.dll
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\bin\Debug\Domain.Seedwork.pdb
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\bin\Debug\Infrastructure.Crosscutting.pdb
+F:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.dll
+F:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.pdb
+E:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.dll
+E:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.pdb
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\obj\Debug\ResolveAssemblyReference.cache
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\obj\Debug\Domain.Seedwork.Tests.dll
 E:\MyCode\MyCommonLibrary\Domain.Seedwork.Tests\obj\Debug\Domain.Seedwork.Tests.pdb
-E:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.dll
-E:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.pdb
-F:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.dll
-F:\MyCode\MyCommonLibrary\TestOutput\Domain.Seedwork.Tests.pdb
