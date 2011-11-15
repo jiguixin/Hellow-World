@@ -333,6 +333,66 @@ namespace Infrastructure.Crosscutting.Declaration
             return sqlText;
         }
 
+        /// <summary>
+        /// 在字符串中提取数值
+        /// </summary>
+        /// <param name="str">传入的字符串</param>
+        /// <returns></returns>
+        public static decimal GetNumber(this string str)
+        {
+            decimal result = 0;
+            if (!string.IsNullOrEmpty(str))
+            {
+                // 正则表达式剔除非数字字符（不包含小数点.） 
+                str = Regex.Replace(str, @"[^\d.\d]", " ");
+                // 如果是数字，则转换为decimal类型 
+                if (Regex.IsMatch(str, @"^[+-]?\d*[.]?\d*$"))
+                {
+                    result = decimal.Parse(str);
+                }
+            }
+            return result; 
+        }
+
+        /// <summary>
+        /// 提取字符串中的数值，如果不为数值者替换为 空字符 得到后在分割得到想到的数据
+        /// 用str.Split(' ')分割，去掉不想要的空字符
+        /// </summary>
+        /// <param name="str">传入的字符串</param>
+        /// <returns></returns>
+        public static string GetNumberStr(this string str)
+        {
+            string result = string.Empty;
+
+            if (!string.IsNullOrEmpty(str))
+            {
+                // 正则表达式剔除非数字字符（不包含小数点.） 
+                result = Regex.Replace(str, @"[^\d.\d]", " ");                  
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 在字符串中提取整型
+        /// </summary>
+        /// <param name="str">传入的字符串</param>
+        /// <returns></returns>
+        public static int GetNumberInt(this string str)
+        {
+            int result = 0;
+            if (!string.IsNullOrEmpty(str))
+            {
+                // 正则表达式剔除非数字字符（不包含小数点.） 
+                str = Regex.Replace(str, @"[^\d\d]", " ");
+                // 如果是数字，则转换为decimal类型 
+                if (Regex.IsMatch(str, @"^[+-]?\d*[.]?\d*$"))
+                {
+                    result = int.Parse(str);
+                }
+            }
+            return result; 
+        }
+
         #endregion
 
         #region IEnumerable扩展方法

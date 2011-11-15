@@ -14,12 +14,12 @@ namespace Infrastructure.Crosscutting.Tests.Utility.CommomHelper
         [Test]
         public void Test1()
         {
-            HttpHelps h = new HttpHelps();
+            //HttpHelps h = new HttpHelps();
 
-            string s = HttpHelps.GetCookieString("https://lab.alipay.com/user/myAccount/index.htm");
+            //string s = HttpHelps.GetCookieString("https://lab.alipay.com/user/myAccount/index.htm");
             //HttpHelps.InternetGetCookieEx()
 
-            Console.WriteLine(h.GetHttpRequestStringByNUll_GetBycookie("https://lab.alipay.com/user/myAccount/index.htm", Encoding.Default, s));
+            //Console.WriteLine(h.GetHttpRequestStringByNUll_GetBycookie("https://lab.alipay.com/user/myAccount/index.htm", Encoding.Default, s));
 
             //Console.WriteLine(HttpHelper.GETDataToUrl("https://www.alipay.com/", Encoding.Default));
 
