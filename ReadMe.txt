@@ -16,4 +16,5 @@ V_0.1.2,2011-10-26 15:42 修改IRepository接口与修改Ef的DbContext的实现
 V_0.1.2,2011-10-27 17:42 增加汉字转拼音帮助类。
 V_0.1.3,2011-11-9 11:06 增加HttpsHelper类主要是可能完成对HTTPS的请求帮助类。
 V_0.1.3,2011-11-15 16:06 在ObjectExtendMethod中增加在字符串中提取数值方法。
-test
+V_0.1.4,2012-2-9 11:06 解决了其它项目没法引用Infrastructure.Crosscutting项目，因为它的目标框架为.NET4.0,其它项目为.NET4.0 Client Prifile版本。
+                       所以必须把要引用项目改成为.net4.0 。
