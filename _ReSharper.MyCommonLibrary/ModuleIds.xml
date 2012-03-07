@@ -17,4 +17,5 @@
   <Module PersistentId="6F19EDB3-5775-41C7-9961-6585904046F1" ModuleId="Infrastructure.Data.Ado.Test" />
   <Module PersistentId="49060B66-B145-4425-BD2A-1848072F7E1D" ModuleId="Infrastructure.Data.Ef.Test" />
   <Module PersistentId="F558807E-3284-41E0-B15F-4EFF81954F56" ModuleId="Infrastructure.Crosscutting.WinformTest" />
+  <Module PersistentId="782F9DA1-C772-4743-AA1C-4E9C099A7D0C" ModuleId="Infrastructure.Crosscutting.Security" />
 </Modules>
