@@ -86,6 +86,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Document", "0-Document", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting.WinformTest", "Infrastructure.Crosscutting.WinformTest\Infrastructure.Crosscutting.WinformTest.csproj", "{F558807E-3284-41E0-B15F-4EFF81954F56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting.Security", "Infrastructure.Crosscutting.Security\Infrastructure.Crosscutting.Security.csproj", "{F51155B4-3B3C-4061-BC70-980045513CF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -286,6 +288,16 @@ Global
 		{F558807E-3284-41E0-B15F-4EFF81954F56}.Release|Mixed Platforms.Build.0 = Release|x86
 		{F558807E-3284-41E0-B15F-4EFF81954F56}.Release|x86.ActiveCfg = Release|x86
 		{F558807E-3284-41E0-B15F-4EFF81954F56}.Release|x86.Build.0 = Release|x86
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F51155B4-3B3C-4061-BC70-980045513CF2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +313,7 @@ Global
 		{106C7F00-C03F-4E29-87AF-ACD1BA292078} = {51362487-633E-4E00-A5D4-61C7208C60E7}
 		{81CAB7AA-5235-42DB-82E6-2B4A0A1F9987} = {51362487-633E-4E00-A5D4-61C7208C60E7}
 		{4C9F89CE-4D69-4CC9-B8AB-602CC69D1549} = {51362487-633E-4E00-A5D4-61C7208C60E7}
+		{F51155B4-3B3C-4061-BC70-980045513CF2} = {51362487-633E-4E00-A5D4-61C7208C60E7}
 		{04E88768-E790-4D06-B2D9-43595B4AEA1B} = {1ADC78DC-FB84-44D3-BE5E-EA5827C9E423}
 		{3060CE7A-406F-4488-BA8D-94E62E0A1671} = {1ADC78DC-FB84-44D3-BE5E-EA5827C9E423}
 		{B1BF9FF8-A09D-4B45-A0ED-CC7EAF4DA1A3} = {71F6074F-00FF-4A1D-877C-42B4648C4274}

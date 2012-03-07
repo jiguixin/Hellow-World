@@ -9,3 +9,5 @@ E:\MyCode\MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.WinformTest.exe
 E:\MyCode\MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.WinformTest.pdb
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.exe
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.exe
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.WinformTest\obj\x86\Debug\Infrastructure.Crosscutting.WinformTest.pdb
