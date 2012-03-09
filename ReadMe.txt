@@ -18,3 +18,8 @@ V_0.1.3,2011-11-9 11:06 增加HttpsHelper类主要是可能完成对HTTPS的请�
 V_0.1.3,2011-11-15 16:06 在ObjectExtendMethod中增加在字符串中提取数值方法。
 V_0.1.4,2012-2-9 11:06 解决了其它项目没法引用Infrastructure.Crosscutting项目，因为它的目标框架为.NET4.0,其它项目为.NET4.0 Client Prifile版本。
                        所以必须把要引用项目改成为.net4.0 。
+V_0.1.5,2012-3-9 11:46 一，在解决方案中增加Infrastructure.Crosscutting.Security 主要用于权限控制.
+					  二，将Resharp生成的文件、Output、OutPutTest默认不上传到GIT服务器。
+					  三，增加专门的程序集目录，以便在引用时调用。
+					  四，修改所有生成为Output,OutputTest
+					  

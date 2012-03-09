@@ -14,11 +14,7 @@
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="1092" fromTop="3" />
       <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfBankAccountRepository.cs" caret="557" fromTop="14" />
       <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1836" fromTop="23" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.Designer.cs" caret="3550" fromTop="23" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:Program.cs" caret="111" fromTop="4" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:MyHttpHelper.cs" caret="10418" fromTop="92" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="479" fromTop="14" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="428" fromTop="15" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="755" fromTop="8" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/f:DesignNotes.txt" caret="0" fromTop="0" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IReadOnlyRepository.cs" caret="0" fromTop="0" />
@@ -33,14 +29,14 @@
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="1584" fromTop="22" />
       <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="399" fromTop="0" />
       <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="388" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:CommomConst.cs" caret="249" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:Util.cs" caret="3943" fromTop="8" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2506" fromTop="27" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1281" fromTop="19" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="497" fromTop="10" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="2002" fromTop="12" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:MyHttpHelper.cs" caret="381" fromTop="12" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1918" fromTop="20" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="1584" fromTop="17" />
-      <File id="F558807E-3284-41E0-B15F-4EFF81954F56/f:FrmWebBrowserTest.cs" caret="314" fromTop="11" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="740" fromTop="17" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="437" fromTop="12" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="259" fromTop="5" />
@@ -51,6 +47,23 @@
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1311" fromTop="16" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1090" fromTop="12" />
       <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1073" fromTop="8" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:Util.cs" caret="3844" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="534" fromTop="10" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="1142" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="740" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2059" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3947" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3608" fromTop="22" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3740" fromTop="26" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="1098" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="1077" fromTop="26" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3418" fromTop="16" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="697" fromTop="10" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3935" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="274" fromTop="6" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="1712" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2506" fromTop="27" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1281" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -82,7 +95,7 @@
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="70" />
+      <Item value="public" priority="71" />
       <Item value="return" priority="15" />
       <Item value="new" priority="56" />
       <Item value="Log4NetProvider`0" priority="0" />
@@ -230,7 +243,7 @@
       <Item value="drT" priority="1" />
       <Item value="DateTime`0" priority="6" />
       <Item value="dbProvider" priority="0" />
-      <Item value="static" priority="5" />
+      <Item value="static" priority="6" />
       <Item value="dbProviderFactory" priority="0" />
       <Item value="build" priority="2" />
       <Item value="adp" priority="3" />

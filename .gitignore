@@ -1,2 +1,4 @@
 .DS_Store
 /_ReSharper.MyCommonLibrary/
+/Output/
+/TestOutput/

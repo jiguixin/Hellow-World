@@ -120,6 +120,7 @@
     <Compile Include="Utility\CommomHelper\SerializeHelper.cs" />
     <Compile Include="Utility\CommomHelper\SqlHelper.cs" />
     <Compile Include="Utility\CommomHelper\TextHelper.cs" />
+    <Compile Include="Utility\CommomHelper\TimeHelper.cs" />
     <Compile Include="Utility\CustomAttribute\LocalizableDescriptionAttribute.cs" />
     <Compile Include="Utility\Util.cs" />
     <Compile Include="Validator\EntityValidatorFactory.cs" />

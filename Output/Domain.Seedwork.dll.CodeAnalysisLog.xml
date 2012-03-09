@@ -4,7 +4,7 @@
  <Namespaces>
   <Namespace Name="Domain.Seedwork">
    <Messages>
-    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
      <Issue Certainty="50" Level="Warning">考虑将“Domain.Seedwork”中定义的类型与另一个命名空间合并。</Issue>
     </Message>
    </Messages>
@@ -19,10 +19,10 @@
        <Types>
         <Type Name="DomainException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Certainty="60" Level="Error">向类型 'DomainException' 中添加对 GetObjectData 的实现。</Issue>
           </Message>
-          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'DomainException': protected DomainException(SerializationInfo, StreamingContext)。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'DomainException': public DomainException(String, Exception)。</Issue>
           </Message>
@@ -30,7 +30,7 @@
         </Type>
         <Type Name="DuplicatedNameException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'DuplicatedNameException': protected DuplicatedNameException(SerializationInfo, StreamingContext)。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'DuplicatedNameException': public DuplicatedNameException()。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'DuplicatedNameException': public DuplicatedNameException(String)。</Issue>
@@ -40,14 +40,14 @@
         </Type>
         <Type Name="EventPublisher" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Name="CSharp2_0" Certainty="90" Level="Error">由于类型 'EventPublisher' 仅包含“static”成员，因此将它标记为“static”可阻止编译器添加默认公共构造函数。</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#Publish(Domain.Seedwork.DomainModel.IDomainEvent)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="EventPublisher.cs" Line="16">在外部可见方法 'EventPublisher.Publish(IDomainEvent)' 中，请在使用参数“evnt”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
@@ -58,14 +58,14 @@
          <Members>
           <Member Name="#GetSubscriberTypesList(System.Type)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="EventSubscriberMappingStore.cs" Line="53">更改 'EventSubscriberMappingStore.GetSubscriberTypesList(Type)' 中的 'List&lt;Type&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ResolveEventSubscriberTypeMappings(System.Reflection.Assembly)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="EventSubscriberMappingStore.cs" Line="32">在外部可见方法 'EventSubscriberMappingStore.ResolveEventSubscriberTypeMappings(Assembly)' 中，请在使用参数“assembly”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
@@ -74,7 +74,7 @@
         </Type>
         <Type Name="IRole`1" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Warning">定义一个自定义特性来替换 'IRole&lt;TRoleId&gt;'。</Issue>
           </Message>
          </Messages>
@@ -83,7 +83,7 @@
          <Members>
           <Member Name="#GetErrors()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="50" Level="Warning">如果可行，请将 'IValidationError.GetErrors()' 改为属性。</Issue>
             </Message>
            </Messages>
@@ -94,7 +94,7 @@
          <Members>
           <Member Name="#GetAtomicValues()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="50" Level="Warning">如果可行，请将 'IValueObject.GetAtomicValues()' 改为属性。</Issue>
             </Message>
            </Messages>
@@ -103,24 +103,24 @@
         </Type>
         <Type Name="MannualAttribute" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Certainty="75" Level="Warning">如有可能，请密封 'MannualAttribute'。</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="Object`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="CriticalWarning">将 'Object&lt;TObjectId&gt;' 中所有公共构造函数的可访问性改为 protected。</Issue>
           </Message>
-          <Message Id="Object" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message Id="Object" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Name="Type" Certainty="95" Level="Error">重命名类型 'Object&lt;TObjectId&gt;'，使它不再与保留的语言关键字“Object”冲突。如果使用保留的关键字作为类型的名称，则会使其他语言的使用者很难使用该类型。</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="ObjectNotExistException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'ObjectNotExistException': protected ObjectNotExistException(SerializationInfo, StreamingContext)。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'ObjectNotExistException': public ObjectNotExistException()。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'ObjectNotExistException': public ObjectNotExistException(String)。</Issue>
@@ -130,7 +130,7 @@
          <Members>
           <Member Name="#.ctor(System.String,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="object" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message Id="object" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="DomainException.cs" Line="31">在成员 'ObjectNotExistException.ObjectNotExistException(string, object)' 中，考虑将参数名称 'domainObjectId' 中的数据类型标识符“Object”替换为一个更通用的词条，如“value”。</Issue>
             </Message>
            </Messages>
@@ -141,24 +141,24 @@
          <Members>
           <Member Name="#GetActorType(System.Type)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="ObjectRoleMappingStore.cs" Line="85">从未使用 'ObjectRoleMappingStore.GetActorType(Type)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#IsRoleDefinition(System.Type)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="ObjectRoleMappingStore.cs" Line="63">从未使用 'ObjectRoleMappingStore.IsRoleDefinition(Type)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ResolveObjectRoleTypeMappings(System.Reflection.Assembly)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="ObjectRoleMappingStore.cs" Line="47">'ObjectRoleMappingStore.ResolveObjectRoleTypeMappings(Assembly)' 创建类型为 'Exception' 的异常，该异常类型不够具体，不应由用户代码引发。如有可能引发此异常实例，请使用其他异常类型。</Issue>
             </Message>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="ObjectRoleMappingStore.cs" Line="35">在外部可见方法 'ObjectRoleMappingStore.ResolveObjectRoleTypeMappings(Assembly)' 中，请在使用参数“assembly”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
@@ -167,7 +167,7 @@
         </Type>
         <Type Name="RemoveObjectFailedException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'RemoveObjectFailedException': protected RemoveObjectFailedException(SerializationInfo, StreamingContext)。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'RemoveObjectFailedException': public RemoveObjectFailedException()。</Issue>
            <Issue Name="MissingConstructor" Certainty="95" Level="Error">将下列构造函数添加到 'RemoveObjectFailedException': public RemoveObjectFailedException(String)。</Issue>
@@ -177,7 +177,7 @@
          <Members>
           <Member Name="#.ctor(System.String,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="object" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message Id="object" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="DomainException.cs" Line="39">在成员 'RemoveObjectFailedException.RemoveObjectFailedException(string, object)' 中，考虑将参数名称 'domainObjectId' 中的数据类型标识符“Object”替换为一个更通用的词条，如“value”。</Issue>
             </Message>
            </Messages>
@@ -186,27 +186,27 @@
         </Type>
         <Type Name="Repository" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Name="CSharp2_0" Certainty="90" Level="Error">由于类型 'Repository' 仅包含“static”成员，因此将它标记为“static”可阻止编译器添加默认公共构造函数。</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#Find`1(Domain.Seedwork.DomainModel.FindObjectsEvent`1&lt;!!0&gt;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="50" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="Repository.cs" Line="82">考虑将 'Repository.Find&lt;TObject&gt;(FindObjectsEvent&lt;TObject&gt;)' 中参数 'findObjectsEvent' 的类型从 'FindObjectsEvent&lt;TObject&gt;' 改为其基类型 'DomainEvent'。此方法在其实现中似乎只需要基类成员。如果方法签名中确实需要此派生类型，则禁止显示此冲突。</Issue>
             </Message>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="Repository.cs" Line="82">更改 'Repository.Find&lt;TObject&gt;(FindObjectsEvent&lt;TObject&gt;)' 中的 'List&lt;TObject&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="Repository.cs" Line="84">在外部可见方法 'Repository.Find&lt;TObject&gt;(FindObjectsEvent&lt;TObject&gt;)' 中，请在使用参数“findObjectsEvent”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Remove`2(!!1)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="Repository.cs" Line="55">考虑使用 'Repository.Remove&lt;TObject, TObjectId&gt;(TObjectId)' 在任何对它的调用中都不需要显式类型参数 'TObject' 的设计。</Issue>
             </Message>
            </Messages>
@@ -215,17 +215,17 @@
         </Type>
         <Type Name="Role`2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="CriticalWarning">将 'Role&lt;TActor, TRoleId&gt;' 中所有公共构造函数的可访问性改为 protected。</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="Role`3" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="CriticalWarning">将 'Role&lt;TActor, TRoleId, TRoleState&gt;' 中所有公共构造函数的可访问性改为 protected。</Issue>
           </Message>
-          <Message TypeName="AvoidExcessiveParametersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1005" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="AvoidExcessiveParametersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1005" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Certainty="85" Level="Error">考虑使用 'Role&lt;TActor, TRoleId, TRoleState&gt;' 带有的类型参数不超过两个的设计。</Issue>
           </Message>
          </Messages>
@@ -234,7 +234,7 @@
          <Members>
           <Member Name="#.ctor(System.Guid)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+            <Message TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
              <Issue Name="IncorrectParameterName" Certainty="95" Level="CriticalError" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\DomainModel" File="UniqueId.cs" Line="14">方法 'UniqueId.UniqueId(Guid)' 将“UniqueId”作为参数 'paramName' 传递给构造函数 'ArgumentNullException'。请将此参数替换为该方法的某个参数名。请注意，所提供的参数名的大小写应与方法中声明的大小写完全一致。</Issue>
             </Message>
            </Messages>
@@ -245,10 +245,10 @@
          <Members>
           <Member Name="#Parameters" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning">通过移除属性 setter 将 'ValidationErrorItem.Parameters' 更改为只读。</Issue>
             </Message>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error">更改 'ValidationErrorItem.Parameters' 中的 'List&lt;object&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
@@ -263,7 +263,7 @@
          <Members>
           <Member Name="#Get(!1)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message Id="Get" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Name="Member" Certainty="95" Level="Error">重命名虚拟/接口成员 'IObjectCollection&lt;TObject, TObjectId&gt;.Get(TObjectId)'，使它不再与保留的语言关键字“Get”冲突。如果使用保留的关键字作为虚拟/接口成员的名称，则会使其他语言的使用者很难重写/实现该成员。</Issue>
             </Message>
            </Messages>
@@ -272,63 +272,63 @@
         </Type>
         <Type Name="ObjectCollection`2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+          <Message TypeName="AbstractTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1012" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
            <Issue Certainty="95" Level="CriticalWarning">将 'ObjectCollection&lt;TObject, TObjectId&gt;' 中所有公共构造函数的可访问性改为 protected。</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#GetTrackingObjects()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="50" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="141">如果可行，请将 'ObjectCollection&lt;TObject, TObjectId&gt;.GetTrackingObjects()' 改为属性。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetTrackingProperties(!0)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="273">从未使用 'ObjectCollection&lt;TObject, TObjectId&gt;.GetTrackingProperties(TObject)' 的“this”参数(Visual Basic 中为“Me”)。根据需要，将成员标记为 static (Visual Basic 中为“Shared”)，或者在方法体或至少一个属性访问器中使用“this”/“Me”。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Handle(Domain.Seedwork.DomainModel.AddObjectEvent`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="41">在外部可见方法 'ObjectCollection&lt;TObject, TObjectId&gt;.Handle(AddObjectEvent&lt;TObject&gt;)' 中，请在使用参数“evnt”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Handle(Domain.Seedwork.DomainModel.GetObjectEvent`2&lt;!0,!1&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="37">在外部可见方法 'ObjectCollection&lt;TObject, TObjectId&gt;.Handle(GetObjectEvent&lt;TObject, TObjectId&gt;)' 中，请在使用参数“evnt”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Handle(Domain.Seedwork.DomainModel.RemoveObjectEvent`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="45">在外部可见方法 'ObjectCollection&lt;TObject, TObjectId&gt;.Handle(RemoveObjectEvent&lt;TObject&gt;)' 中，请在使用参数“evnt”之前先对其进行验证。</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PersistModifiedObjects(System.Collections.Generic.List`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="157">更改 'ObjectCollection&lt;TObject, TObjectId&gt;.PersistModifiedObjects(List&lt;TObject&gt;)' 中的 'List&lt;TObject&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PersistNewObjects(System.Collections.Generic.List`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="154">更改 'ObjectCollection&lt;TObject, TObjectId&gt;.PersistNewObjects(List&lt;TObject&gt;)' 中的 'List&lt;TObject&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PersistRemovedObjects(System.Collections.Generic.List`1&lt;!0&gt;)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="ObjectCollection.cs" Line="160">更改 'ObjectCollection&lt;TObject, TObjectId&gt;.PersistRemovedObjects(List&lt;TObject&gt;)' 中的 'List&lt;TObject&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
@@ -337,14 +337,14 @@
         </Type>
         <Type Name="UnitOfWork" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
            <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">对 'UnitOfWork' 提供 Dispose(bool) 的可重写实现或将该类型标记为密封。对 Dispose(false) 的调用应仅清理本机资源。对 Dispose(true) 的调用应既清理托管资源又清理本机资源。</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="UnitOfWork.cs" Line="49">修改 'UnitOfWork.Dispose()'，使它先调用 Dispose(true)，然后对当前对象实例(在 Visual Basic 中为“this”或“Me”)调用 GC.SuppressFinalize，最后返回。</Issue>
              <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="E:\MyCode\MyCommonLibrary\Domain.Seedwork\PersistenceModel" File="UnitOfWork.cs" Line="49">确保将 'UnitOfWork.Dispose()' 声明为 public 和 sealed。</Issue>
             </Message>
@@ -352,7 +352,7 @@
           </Member>
           <Member Name="#PersistableCollections" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-02-09 03:16:54Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2012-03-09 03:46:34Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error">更改 'UnitOfWork.PersistableCollections' 中的 'List&lt;IPersistableCollection&gt;' 以使用 Collection&lt;T&gt;、ReadOnlyCollection&lt;T&gt; 或 KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
