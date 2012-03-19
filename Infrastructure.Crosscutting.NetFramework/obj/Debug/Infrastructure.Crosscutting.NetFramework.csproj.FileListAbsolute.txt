@@ -27,3 +27,10 @@ E:\MyCode\MyCommonLibrary\Output\Infrastructure.Crosscutting.NetFramework.dll.la
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\ResolveAssemblyReference.cache
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\Infrastructure.Crosscutting.NetFramework.dll
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\Infrastructure.Crosscutting.NetFramework.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.NetFramework.dll
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.NetFramework.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.NetFramework.dll.CodeAnalysisLog.xml
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.NetFramework.dll.lastcodeanalysissucceeded
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\ResolveAssemblyReference.cache
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\Infrastructure.Crosscutting.NetFramework.dll
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\obj\Debug\Infrastructure.Crosscutting.NetFramework.pdb

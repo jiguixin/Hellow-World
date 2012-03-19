@@ -102,6 +102,7 @@
     <Compile Include="Utility\CommomHelper\FileHelperTest.cs" />
     <Compile Include="Utility\CommomHelper\HttpHelperTest.cs" />
     <Compile Include="Utility\CommomHelper\RmbHelperTest.cs" />
+    <Compile Include="Validation\MyValidationTest.cs" />
     <Compile Include="ValidatorsTests.cs" />
   </ItemGroup>
   <ItemGroup>

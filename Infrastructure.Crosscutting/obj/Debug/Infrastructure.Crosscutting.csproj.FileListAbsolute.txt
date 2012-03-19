@@ -32,3 +32,13 @@ E:\MyCode\MyCommonLibrary\Output\Infrastructure.Crosscutting.dll.CodeAnalysisLog
 E:\MyCode\MyCommonLibrary\Output\Infrastructure.Crosscutting.dll.lastcodeanalysissucceeded
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\Infrastructure.Crosscutting.dll
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\Infrastructure.Crosscutting.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.dll
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.dll.CodeAnalysisLog.xml
+F:\MyCode\GitHub_MyCommonLibrary\Output\Infrastructure.Crosscutting.dll.lastcodeanalysissucceeded
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\ResolveAssemblyReference.cache
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\Infrastructure.Crosscutting.Resources.Messages.resources
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\GenerateResource.read.1.tlog
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\GenerateResource.write.1.tlog
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\Infrastructure.Crosscutting.dll
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting\obj\Debug\Infrastructure.Crosscutting.pdb

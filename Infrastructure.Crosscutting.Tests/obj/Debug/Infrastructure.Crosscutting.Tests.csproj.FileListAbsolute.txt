@@ -54,3 +54,9 @@ E:\MyCode\MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.Tests.pdb
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\ResolveAssemblyReference.cache
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\Infrastructure.Crosscutting.Tests.dll
 E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\Infrastructure.Crosscutting.Tests.pdb
+F:\MyCode\GitHub_MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.Tests.dll.config
+F:\MyCode\GitHub_MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.Tests.dll
+F:\MyCode\GitHub_MyCommonLibrary\TestOutput\Infrastructure.Crosscutting.Tests.pdb
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\ResolveAssemblyReference.cache
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\Infrastructure.Crosscutting.Tests.dll
+F:\MyCode\GitHub_MyCommonLibrary\Infrastructure.Crosscutting.Tests\obj\Debug\Infrastructure.Crosscutting.Tests.pdb

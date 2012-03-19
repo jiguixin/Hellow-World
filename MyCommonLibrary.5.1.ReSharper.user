@@ -9,23 +9,17 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Exceptions/f:NotValid.cs" caret="449" fromTop="15" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Interfaces/f:IRule.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Interfaces/f:IValidator.cs" caret="147" fromTop="9" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Between.cs" caret="31" fromTop="1" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Cascade.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Contains.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Custom.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:DoesNotContain.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Empty.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Equal.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThan.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThanOrEqual.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsDomain.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsEmailAddress.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThan.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThanOrEqual.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MaxLength.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MinLength.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotBetween.cs" caret="0" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotEmpty.cs" caret="0" fromTop="0" />
@@ -35,17 +29,18 @@
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Regex.cs" caret="1" fromTop="0" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:RequiredString.cs" caret="1388" fromTop="17" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Required.cs" caret="1532" fromTop="17" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="73826" fromTop="18" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="0" fromTop="0" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1394" fromTop="24" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:Validator.cs" caret="9507" fromTop="15" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:F!?MyCode?GitHub_MyCommonLibrary?ReadMe.txt" caret="1331" fromTop="24" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="398" fromTop="15" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:BaseClasses/f:Rule.cs" caret="941" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:GenericComparer.cs" caret="1055" fromTop="28" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThan.cs" caret="1622" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MaxLength.cs" caret="3074" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:Validator.cs" caret="31939" fromTop="27" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="2163" fromTop="18" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="260" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="23753" fromTop="3" />
     </RecentFiles>
     <RecentEdits>
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="21107" fromTop="24" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="32851" fromTop="34" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="73867" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="74856" fromTop="24" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="84313" fromTop="34" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="1525" fromTop="12" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="75502" fromTop="19" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="6368" fromTop="22" />
@@ -70,7 +65,12 @@
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="163" fromTop="5" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="84671" fromTop="23" />
       <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="0" fromTop="0" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1394" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="860" fromTop="15" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1231" fromTop="24" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1032" fromTop="21" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="258" fromTop="7" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1095" fromTop="19" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="931" fromTop="23" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -87,7 +87,7 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="source" priority="0" />
-      <Item value="using" priority="27" />
+      <Item value="using" priority="28" />
       <Item value="Infrastructure" priority="5" />
       <Item value="Crosscutting" priority="1" />
       <Item value="Declaration" priority="1" />
@@ -98,17 +98,17 @@
       <Item value="this" priority="27" />
       <Item value="entity" priority="0" />
       <Item value="interface" priority="0" />
-      <Item value="class" priority="2" />
+      <Item value="class" priority="3" />
       <Item value="myLogger" priority="7" />
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
-      <Item value="public" priority="71" />
+      <Item value="public" priority="76" />
       <Item value="return" priority="16" />
-      <Item value="new" priority="56" />
+      <Item value="new" priority="58" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
       <Item value="void" priority="27" />
-      <Item value="Console`0" priority="24" />
+      <Item value="Console`0" priority="26" />
       <Item value="Test" priority="16" />
       <Item value="Log4NetFactory" priority="0" />
       <Item value="factory" priority="21" />
@@ -130,8 +130,8 @@
       <Item value="ICacheManager`0" priority="0" />
       <Item value="_cacheManager" priority="4" />
       <Item value="e" priority="1" />
-      <Item value="string" priority="36" />
-      <Item value="int" priority="7" />
+      <Item value="string" priority="37" />
+      <Item value="int" priority="8" />
       <Item value="true" priority="5" />
       <Item value="enum" priority="0" />
       <Item value="MyEnum`0" priority="0" />
@@ -168,7 +168,7 @@
       <Item value="T`0" priority="3" />
       <Item value="instanceType" priority="0" />
       <Item value="type" priority="0" />
-      <Item value="false" priority="2" />
+      <Item value="false" priority="3" />
       <Item value="myEnginee" priority="0" />
       <Item value="memoryCache" priority="1" />
       <Item value="s" priority="6" />
@@ -248,7 +248,7 @@
       <Item value="errMsg" priority="1" />
       <Item value="dr1" priority="3" />
       <Item value="drT" priority="1" />
-      <Item value="DateTime`0" priority="6" />
+      <Item value="DateTime`0" priority="8" />
       <Item value="dbProvider" priority="0" />
       <Item value="static" priority="6" />
       <Item value="dbProviderFactory" priority="0" />
@@ -297,7 +297,7 @@
       <Item value="Ado" priority="0" />
       <Item value="Dapper" priority="0" />
       <Item value="lst" priority="1" />
-      <Item value="Guid`0" priority="0" />
+      <Item value="Guid`0" priority="2" />
       <Item value="sql" priority="1" />
       <Item value="Clone`0" priority="0" />
       <Item value="Count`1" priority="0" />
@@ -346,6 +346,18 @@
       <Item value="entityValidator" priority="1" />
       <Item value="validationContext" priority="0" />
       <Item value="Linq" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="ValidationManager`0" priority="1" />
+      <Item value="A`0" priority="3" />
+      <Item value="a" priority="1" />
+      <Item value="A" priority="0" />
+      <Item value="instent" priority="4" />
+      <Item value="IsSecuss" priority="0" />
+      <Item value="ItemA" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="GreaterThanOrEqual" priority="0" />
+      <Item value="Guid" priority="0" />
+      <Item value="g" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
       <Item value="Delete`0" priority="0" />
@@ -357,7 +369,7 @@
       <Item value="Error`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="25" />
+      <Item value="WriteLine`0" priority="27" />
       <Item value="Write`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Crosscutting.NetFramework.Logging.Log4Net.Log4NetFactory">
@@ -560,7 +572,7 @@
       <Item value="Clone`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="5" />
+      <Item value="Now" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="Select`2" priority="1" />
@@ -618,7 +630,7 @@
       <Item value="GetValueDirect" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
-      <Item value="NewGuid`0" priority="0" />
+      <Item value="NewGuid`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.IO.File">
       <Item value="Delete`0" priority="0" />
@@ -699,6 +711,22 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Validator.IEntityValidator">
       <Item value="IsValid`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Validator.ValidationManager">
+      <Item value="GetValidator`0" priority="0" />
+      <Item value="Validate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Validator.Validator`1">
+      <Item value="GreaterThan`1" priority="0" />
+      <Item value="MaxLength`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.Validation.A">
+      <Item value="ItemA" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="FormatToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="FormatToString`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
