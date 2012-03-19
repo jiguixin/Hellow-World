@@ -9,61 +9,68 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextManager.cs" caret="638" fromTop="19" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableExtensions.cs" caret="1101" fromTop="0" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:IQueryableUnitOfWork.cs" caret="1092" fromTop="3" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/d:BankingModule/d:Repositories/f:EfBankAccountRepository.cs" caret="557" fromTop="14" />
-      <File id="49060B66-B145-4425-BD2A-1848072F7E1D/f:EfBankAccountRepositoryTests.cs" caret="1836" fromTop="23" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="479" fromTop="14" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="755" fromTop="8" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/f:DesignNotes.txt" caret="0" fromTop="0" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IReadOnlyRepository.cs" caret="0" fromTop="0" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:ISql.cs" caret="0" fromTop="0" />
-      <File id="DB1A84DC-06FA-4396-9CA0-E7D7C9833EBA/f:DbExecutor.cs" caret="2399" fromTop="16" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:Entity.cs" caret="1069" fromTop="12" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:IdentityGenerator.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/f:ValueObject.cs" caret="0" fromTop="0" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/d:DbContextProvider/f:DbContextBuilder.cs" caret="0" fromTop="0" />
-      <File id="04D675A3-B794-44BD-A25C-673BB44739CB/d:DomainModel/f:Repository.cs" caret="3051" fromTop="13" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IRepository.cs" caret="411" fromTop="0" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfRepository.cs" caret="1584" fromTop="22" />
-      <File id="E2029314-D463-46F3-8293-EB045E5CF17A/f:EfUnitOfWork.cs" caret="399" fromTop="0" />
-      <File id="1B99F045-E694-4590-9308-3549A65CE3C0/f:IUnitOfWork.cs" caret="388" fromTop="19" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="0" fromTop="0" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:CommomConst.cs" caret="249" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:Util.cs" caret="3943" fromTop="8" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="145" fromTop="5" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2506" fromTop="27" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1281" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Exceptions/f:NotValid.cs" caret="449" fromTop="15" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Interfaces/f:IRule.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Interfaces/f:IValidator.cs" caret="147" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Between.cs" caret="31" fromTop="1" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Cascade.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Contains.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Custom.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:DoesNotContain.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Empty.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Equal.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThan.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThanOrEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsDomain.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsEmailAddress.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThan.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThanOrEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MaxLength.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MinLength.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotBetween.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotEmpty.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotNaN.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotRegex.cs" caret="1" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Regex.cs" caret="1" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:RequiredString.cs" caret="1388" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Required.cs" caret="1532" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="73826" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="0" fromTop="0" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1394" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:Validator.cs" caret="9507" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="740" fromTop="17" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Utility/d:CommomHelper/f:HttpHelperTest.cs" caret="437" fromTop="12" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="259" fromTop="5" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="2148" fromTop="24" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1559" fromTop="16" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1599" fromTop="25" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1599" fromTop="26" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1311" fromTop="16" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1090" fromTop="12" />
-      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="1073" fromTop="8" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/f:Util.cs" caret="3844" fromTop="20" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="534" fromTop="10" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="1142" fromTop="11" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="740" fromTop="17" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2059" fromTop="23" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3947" fromTop="34" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3608" fromTop="22" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3740" fromTop="26" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="1098" fromTop="34" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="1077" fromTop="26" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3418" fromTop="16" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:Enums.cs" caret="697" fromTop="10" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="3935" fromTop="19" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="274" fromTop="6" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="1712" fromTop="23" />
-      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Utility/d:CommomHelper/f:TimeHelper.cs" caret="2506" fromTop="27" />
-      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1281" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="21107" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="32851" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="73867" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="74856" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="84313" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="1525" fromTop="12" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="75502" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="6368" fromTop="22" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="6994" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="76209" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="3657" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="4033" fromTop="32" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="4439" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="76897" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="17944" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="18528" fromTop="33" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="5344" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="5861" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="83672" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="77657" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="54459" fromTop="16" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="64139" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="24760" fromTop="15" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="36586" fromTop="13" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="37933" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="312" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="163" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="84671" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="0" fromTop="0" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:E!?MyCode?MyCommonLibrary?ReadMe.txt" caret="1394" fromTop="24" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -80,7 +87,7 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="source" priority="0" />
-      <Item value="using" priority="26" />
+      <Item value="using" priority="27" />
       <Item value="Infrastructure" priority="5" />
       <Item value="Crosscutting" priority="1" />
       <Item value="Declaration" priority="1" />
@@ -96,7 +103,7 @@
       <Item value="traceData" priority="0" />
       <Item value="exception" priority="0" />
       <Item value="public" priority="71" />
-      <Item value="return" priority="15" />
+      <Item value="return" priority="16" />
       <Item value="new" priority="56" />
       <Item value="Log4NetProvider`0" priority="0" />
       <Item value="NUnit" priority="1" />
@@ -123,7 +130,7 @@
       <Item value="ICacheManager`0" priority="0" />
       <Item value="_cacheManager" priority="4" />
       <Item value="e" priority="1" />
-      <Item value="string" priority="35" />
+      <Item value="string" priority="36" />
       <Item value="int" priority="7" />
       <Item value="true" priority="5" />
       <Item value="enum" priority="0" />
@@ -164,9 +171,9 @@
       <Item value="false" priority="2" />
       <Item value="myEnginee" priority="0" />
       <Item value="memoryCache" priority="1" />
-      <Item value="s" priority="5" />
+      <Item value="s" priority="6" />
       <Item value="connection" priority="9" />
-      <Item value="System" priority="3" />
+      <Item value="System" priority="4" />
       <Item value="Data" priority="5" />
       <Item value="SqlClient" priority="2" />
       <Item value="SqlConnection`0" priority="5" />
@@ -336,6 +343,9 @@
       <Item value="ToList`1" priority="0" />
       <Item value="List" priority="0" />
       <Item value="result" priority="0" />
+      <Item value="entityValidator" priority="1" />
+      <Item value="validationContext" priority="0" />
+      <Item value="Linq" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
       <Item value="Delete`0" priority="0" />
@@ -680,6 +690,15 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.License.LicenseKey">
+      <Item value="Value`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.CrossCutting.Cryptography.Crypto">
+      <Item value="Encrypt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Validator.IEntityValidator">
+      <Item value="IsValid`1" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

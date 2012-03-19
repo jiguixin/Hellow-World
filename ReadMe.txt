@@ -22,4 +22,5 @@ V_0.1.5,2012-3-9 11:46 一，在解决方案中增加Infrastructure.Crosscutting
 					  二，将Resharp生成的文件、Output、OutPutTest默认不上传到GIT服务器。
 					  三，增加专门的程序集目录，以便在引用时调用。
 					  四，修改所有生成为Output,OutputTest
-					  
+V_0.1.6,2012-3-14 16:06 增加获取本机信息增加LicenseKey.cs类
+V_0.1.7,2012-3-19 18:06 增加对象验证类：ValidationManager.cs，和对像扩展方法。

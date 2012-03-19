@@ -4,14 +4,14 @@
  <Namespaces>
   <Namespace Name="Infrastructure.Crosscutting.NetFramework.Logging.Log4Net">
    <Messages>
-    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-03-09 03:46:39Z" FixCategory="Breaking">
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-03-19 05:17:52Z" FixCategory="Breaking">
      <Issue Certainty="50" Level="Warning">考虑将“Infrastructure.Crosscutting.NetFramework.Logging.Log4Net”中定义的类型与另一个命名空间合并。</Issue>
     </Message>
    </Messages>
   </Namespace>
   <Namespace Name="Infrastructure.Crosscutting.NetFramework.Logging.TraceSource">
    <Messages>
-    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-03-09 03:46:39Z" FixCategory="Breaking">
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2012-03-19 05:17:52Z" FixCategory="Breaking">
      <Issue Certainty="50" Level="Warning">考虑将“Infrastructure.Crosscutting.NetFramework.Logging.TraceSource”中定义的类型与另一个命名空间合并。</Issue>
     </Message>
    </Messages>
@@ -28,7 +28,7 @@
          <Members>
           <Member Name="#LogError(System.String,System.Exception,System.Object[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="1" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-09 03:46:39Z" FixCategory="DependsOnFix">
+            <Message Id="1" TypeName="验证公共方法的参数" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2012-03-19 05:17:52Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.NetFramework\Logging\TraceSource" File="TraceSourceProvider.cs" Line="140">在外部可见方法 'TraceSourceProvider.LogError(string, Exception, params object[])' 中，请在使用参数“exception”之前先对其进行验证。</Issue>
             </Message>
            </Messages>

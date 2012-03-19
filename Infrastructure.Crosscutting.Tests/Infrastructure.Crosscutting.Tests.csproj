@@ -89,6 +89,7 @@
     <Compile Include="Dtos\OrderDto.cs" />
     <Compile Include="EngineTest\CustomEngine.cs" />
     <Compile Include="EngineTest\Start.cs" />
+    <Compile Include="License\LicenseKeyTest.cs" />
     <Compile Include="Log4NetTest.cs" />
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\Customer.cs" />

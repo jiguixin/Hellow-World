@@ -62,8 +62,12 @@
     <Compile Include="Logging\TraceSource\TraceSourceProvider.cs" />
     <Compile Include="Logging\TraceSource\TraceSourceLogFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validator\DataAnnotationsEntityValidator.cs" />
-    <Compile Include="Validator\DataAnnotationsEntityValidatorFactory.cs" />
+    <Compile Include="Validator\DataAnnotationsEntityValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validator\DataAnnotationsEntityValidatorFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj">

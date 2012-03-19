@@ -13,11 +13,8 @@
 
 namespace Infrastructure.Crosscutting.NetFramework.Validator
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-
     using Infrastructure.Crosscutting.Validator;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel;
@@ -78,11 +75,11 @@ namespace Infrastructure.Crosscutting.NetFramework.Validator
 
 
         /// <summary>
-        /// <see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/>
+        /// <see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/>
         /// </summary>
-        /// <typeparam name="TEntity"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
-        /// <param name="item"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
-        /// <returns><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
+        /// <typeparam name="TEntity"><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></typeparam>
+        /// <param name="item"><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></param>
+        /// <returns><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></returns>
         public bool IsValid<TEntity>(TEntity item) where TEntity : class
         {
 
@@ -97,11 +94,11 @@ namespace Infrastructure.Crosscutting.NetFramework.Validator
             return !validationErrors.Any();
         }
         /// <summary>
-        /// <see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/>
+        /// <see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/>
         /// </summary>
-        /// <typeparam name="TEntity"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
-        /// <param name="item"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
-        /// <returns><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
+        /// <typeparam name="TEntity"><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></typeparam>
+        /// <param name="item"><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></param>
+        /// <returns><see cref="Infrastructure.Crosscutting.Validator.IEntityValidator"/></returns>
         public IEnumerable<string> GetInvalidMessages<TEntity>(TEntity item) where TEntity : class
         {
             if (item == null)

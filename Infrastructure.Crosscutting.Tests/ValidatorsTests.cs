@@ -9,85 +9,112 @@
 //// This code is released under the terms of the MS-LPL license, 
 //// http://microsoftnlayerapp.codeplex.com/license
 ////===================================================================================
-			
-//namespace Infrastructure.Crosscutting.Tests
-//{
-//    using System.Linq;
-//    using Infrastructure.Crosscutting.Tests.Classes;
-//    using Microsoft.Practices.Unity;    
-//    using Infrastructure.Crosscutting.NetFramework.Validator;
-//    using Infrastructure.Crosscutting.Validator;
-//    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace Infrastructure.Crosscutting.Tests
+{
+    using System.Linq;
+    using Infrastructure.Crosscutting.NetFramework.Validator;
+    using Infrastructure.Crosscutting.Validator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
-//    [TestClass()]
-//    public class ValidatorsTests
-//    {
-//        #region Class Initialize
+    [TestClass()]
+    public class ValidatorsTests
+    {
+        #region Class Initialize
 
-//        [ClassInitialize()]
-//        public static void ClassInitialze(TestContext context)
-//        {
-//            // Initialize default log factory
-//            EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());
-//        }
+        [ClassInitialize()]
+        public static void ClassInitialze(TestContext context)
+        {
+            // Initialize default log factory
+            EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());
+        }
 
-//        #endregion
+        #endregion
 
-       
-//        [TestMethod()]
-//        public void PerformValidationIsValidReturnFalseWithInvalidEntities()
-//        {
-//            //Arrange
-//            var entityA =  new EntityWithValidationAttribute();
-//            entityA.RequiredProperty = null;
 
-//            var entityB = new EntityWithValidatableObject();
-//            entityB.RequiredProperty = null;
+        [TestMethod()]
+        public void PerformValidationIsValidReturnFalseWithInvalidEntities()
+        {
+            //Arrange
+            var entityA = new EntityWithValidationAttribute();
+            entityA.RequiredProperty = null;
 
-//            IEntityValidator entityValidator = EntityValidatorFactory.CreateValidator();
+            var entityB = new EntityWithValidatableObject();
+            entityB.RequiredProperty = null;
 
-//            //Act
-//            var entityAValidationResult = entityValidator.IsValid(entityA);
-//            var entityAInvalidMessages = entityValidator.GetInvalidMessages(entityA);
- 
-//            var entityBValidationResult = entityValidator.IsValid(entityB);
-//            var entityBInvalidMessages = entityValidator.GetInvalidMessages(entityB);
+            IEntityValidator entityValidator = EntityValidatorFactory.CreateValidator();
 
-//            //Assert
-//            Assert.IsFalse(entityAValidationResult);
-//            Assert.IsFalse(entityBValidationResult);
+            //Act
+            var entityAValidationResult = entityValidator.IsValid(entityA);
+            var entityAInvalidMessages = entityValidator.GetInvalidMessages(entityA);
 
-//            Assert.IsTrue(entityAInvalidMessages.Any());
-//            Assert.IsTrue(entityBInvalidMessages.Any());
+            var entityBValidationResult = entityValidator.IsValid(entityB);
+            var entityBInvalidMessages = entityValidator.GetInvalidMessages(entityB);
 
-//        }
-//        [TestMethod()]
-//        public void PerformValidationIsValidReturnTrueWithValidEntities()
-//        {
-//            //Arrange
-//            var entityA = new EntityWithValidationAttribute();
-//            entityA.RequiredProperty = "the data";
+            //Assert
+            Assert.IsFalse(entityAValidationResult);
+            Assert.IsFalse(entityBValidationResult);
 
-//            var entityB = new EntityWithValidatableObject();
-//            entityB.RequiredProperty = "the data";
+            Assert.IsTrue(entityAInvalidMessages.Any());
+            Assert.IsTrue(entityBInvalidMessages.Any());
 
-//            IEntityValidator entityValidator = EntityValidatorFactory.CreateValidator();
+        }
+        [TestMethod()]
+        public void PerformValidationIsValidReturnTrueWithValidEntities()
+        {
+            //Arrange
+            var entityA = new EntityWithValidationAttribute();
+            entityA.RequiredProperty = "the data";
 
-//            //Act
-//            var entityAValidationResult = entityValidator.IsValid(entityA);
-//            var entityAInvalidMessages = entityValidator.GetInvalidMessages(entityA);
+            var entityB = new EntityWithValidatableObject();
+            entityB.RequiredProperty = "the data";
 
-//            var entityBValidationResult = entityValidator.IsValid(entityB);
-//            var entityBInvalidMessages = entityValidator.GetInvalidMessages(entityB);
+            IEntityValidator entityValidator = EntityValidatorFactory.CreateValidator();
 
-//            //Assert
-//            Assert.IsTrue(entityAValidationResult);
-//            Assert.IsTrue(entityBValidationResult);
+            //Act
+            var entityAValidationResult = entityValidator.IsValid(entityA);
+            var entityAInvalidMessages = entityValidator.GetInvalidMessages(entityA);
 
-//            Assert.IsFalse(entityAInvalidMessages.Any());
-//            Assert.IsFalse(entityBInvalidMessages.Any());
+            var entityBValidationResult = entityValidator.IsValid(entityB);
+            var entityBInvalidMessages = entityValidator.GetInvalidMessages(entityB);
+          
 
-//        }
-//    }
-//}
+            //Assert
+            Assert.IsTrue(entityAValidationResult);
+            Assert.IsTrue(entityBValidationResult);
+
+            Assert.IsFalse(entityAInvalidMessages.Any());
+            Assert.IsFalse(entityBInvalidMessages.Any());
+
+        }
+    }
+    class EntityWithValidationAttribute
+    {
+        [Required(ErrorMessage = "This is a required property")]
+        public string RequiredProperty { get; set; }
+    }
+    class EntityWithValidatableObject
+        : IValidatableObject
+    {
+        public string RequiredProperty { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            var validationResults = new List<ValidationResult>();
+
+            if (String.IsNullOrEmpty(RequiredProperty)
+                ||
+                String.IsNullOrWhiteSpace(RequiredProperty))
+            {
+                validationResults.Add(new ValidationResult("Invalid Required property", new string[] { "RequiredProperty" }));
+            }
+
+            return validationResults;
+        }
+    }
+}

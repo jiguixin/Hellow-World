@@ -47,6 +47,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -84,6 +85,8 @@
     <Compile Include="Declaration\ChineseLunisolar.cs" />
     <Compile Include="Declaration\CommomConst.cs" />
     <Compile Include="Declaration\Enums.cs" />
+    <Compile Include="Declaration\GenericComparer.cs" />
+    <Compile Include="Declaration\GenericEqualityComparer.cs" />
     <Compile Include="Declaration\NameId.cs" />
     <Compile Include="Declaration\NameValue.cs" />
     <Compile Include="Declaration\ObjectExtendMethod.cs" />
@@ -91,6 +94,7 @@
     <Compile Include="Exceptions\MyException.cs" />
     <Compile Include="IoC\IInstanceLocator.cs" />
     <Compile Include="IoC\InstanceLocator.cs" />
+    <Compile Include="License\LicenseKey.cs" />
     <Compile Include="Logging\ILoggerFactory.cs" />
     <Compile Include="Logging\LoggerFactory.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
@@ -123,9 +127,39 @@
     <Compile Include="Utility\CommomHelper\TimeHelper.cs" />
     <Compile Include="Utility\CustomAttribute\LocalizableDescriptionAttribute.cs" />
     <Compile Include="Utility\Util.cs" />
+    <Compile Include="Validator\BaseClasses\BaseAttribute.cs" />
+    <Compile Include="Validator\BaseClasses\Rule.cs" />
     <Compile Include="Validator\EntityValidatorFactory.cs" />
+    <Compile Include="Validator\Exceptions\NotValid.cs" />
     <Compile Include="Validator\IEntityValidator.cs" />
     <Compile Include="Validator\IEntityValidatorFactory.cs" />
+    <Compile Include="Validator\Interfaces\IRule.cs" />
+    <Compile Include="Validator\Interfaces\IValidator.cs" />
+    <Compile Include="Validator\Rules\Between.cs" />
+    <Compile Include="Validator\Rules\Cascade.cs" />
+    <Compile Include="Validator\Rules\Contains.cs" />
+    <Compile Include="Validator\Rules\Custom.cs" />
+    <Compile Include="Validator\Rules\DoesNotContain.cs" />
+    <Compile Include="Validator\Rules\Empty.cs" />
+    <Compile Include="Validator\Rules\Equal.cs" />
+    <Compile Include="Validator\Rules\GreaterThan.cs" />
+    <Compile Include="Validator\Rules\GreaterThanOrEqual.cs" />
+    <Compile Include="Validator\Rules\IsDomain.cs" />
+    <Compile Include="Validator\Rules\IsEmailAddress.cs" />
+    <Compile Include="Validator\Rules\LessThan.cs" />
+    <Compile Include="Validator\Rules\LessThanOrEqual.cs" />
+    <Compile Include="Validator\Rules\MaxLength.cs" />
+    <Compile Include="Validator\Rules\MinLength.cs" />
+    <Compile Include="Validator\Rules\NotBetween.cs" />
+    <Compile Include="Validator\Rules\NotEmpty.cs" />
+    <Compile Include="Validator\Rules\NotEqual.cs" />
+    <Compile Include="Validator\Rules\NotNaN.cs" />
+    <Compile Include="Validator\Rules\NotRegex.cs" />
+    <Compile Include="Validator\Rules\Regex.cs" />
+    <Compile Include="Validator\Rules\Required.cs" />
+    <Compile Include="Validator\Rules\RequiredString.cs" />
+    <Compile Include="Validator\ValidationManager.cs" />
+    <Compile Include="Validator\Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Messages.resx">
