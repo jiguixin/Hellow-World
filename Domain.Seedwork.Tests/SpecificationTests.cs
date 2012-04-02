@@ -193,11 +193,47 @@ namespace Domain.Seedwork.Tests
             InvocationExpression invokedExpr = Expression.Invoke(rightSpec, leftSpec.Parameters.Cast<Expression>());
             expected = Expression.Lambda<Func<SampleEntity, bool>>(Expression.AndAlso(leftSpec.Body, invokedExpr), leftSpec.Parameters);
 
-            actual = andSpec.SatisfiedBy();
-
-
+            actual = andSpec.SatisfiedBy(); 
 
         }
+
+        [TestMethod]
+        public void UseSpecificationAndOperatorTest1()
+        {
+            //Arrange
+            DirectSpecification<SampleEntity> leftAdHocSpecification;
+            DirectSpecification<SampleEntity> rightAdHocSpecification;
+
+            Expression<Func<SampleEntity, bool>> leftSpec = s => s.Id == Guid.Empty;
+
+            Expression<Func<SampleEntity, bool>> ltSpec =k=>GetA(k);
+
+
+            Expression<Func<SampleEntity, bool>> rightSpec = s => s.SampleProperty.Length > 2;
+
+            Expression<Func<SampleEntity, bool>> expected = null;
+            Expression<Func<SampleEntity, bool>> actual = null;
+
+            //Act
+            leftAdHocSpecification = new DirectSpecification<SampleEntity>(leftSpec);
+            rightAdHocSpecification = new DirectSpecification<SampleEntity>(rightSpec);
+
+            ISpecification<SampleEntity> andSpec = leftAdHocSpecification & rightAdHocSpecification;
+            andSpec = leftAdHocSpecification || rightAdHocSpecification;
+            //Assert
+
+
+            InvocationExpression invokedExpr = Expression.Invoke(rightSpec, leftSpec.Parameters.Cast<Expression>());
+            expected = Expression.Lambda<Func<SampleEntity, bool>>(Expression.AndAlso(leftSpec.Body, invokedExpr), leftSpec.Parameters);
+
+            actual = andSpec.SatisfiedBy();
+            
+            ISpecification<SampleEntity> aSpec =leftAdHocSpecification & rightAdHocSpecification;
+
+            bool sss = aSpec.SatisfiedBy().Compile()(new SampleEntity() { Id=Guid.Empty, SampleProperty = "aaa" });
+
+        }
+
         [TestMethod]
         public void UseSpecificationOrOperatorTest()
         {
@@ -323,6 +359,11 @@ namespace Domain.Seedwork.Tests
             //Assert
             Assert.IsNotNull(trueSpec);
             Assert.AreEqual(expected, actual);
+        }
+
+        public bool GetA(SampleEntity s)
+        {
+            return false;
         }
     }
 }
