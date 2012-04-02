@@ -220,9 +220,7 @@ namespace Domain.Seedwork.Tests
 
             ISpecification<SampleEntity> andSpec = leftAdHocSpecification & rightAdHocSpecification;
             andSpec = leftAdHocSpecification || rightAdHocSpecification;
-            //Assert
-
-
+            //Assert 
             InvocationExpression invokedExpr = Expression.Invoke(rightSpec, leftSpec.Parameters.Cast<Expression>());
             expected = Expression.Lambda<Func<SampleEntity, bool>>(Expression.AndAlso(leftSpec.Body, invokedExpr), leftSpec.Parameters);
 
