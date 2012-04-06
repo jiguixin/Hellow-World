@@ -136,6 +136,6 @@
     <value>{0} 已经发布了新版本 {1}</value>
   </data>
   <data name="DonotRunMeDirectly" xml:space="preserve">
-    <value>我是用来进行自动更新的, 请不要直接双击我,可以用带命令行参数形式。</value>
+    <value>我是用来进行自动更新的, 请不要直接双击我.</value>
   </data>
 </root>

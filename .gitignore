@@ -3,3 +3,5 @@
 /Output/
 /TestOutput/
 /TestResults/
+_ReSharper*/
+*.ReSharper
