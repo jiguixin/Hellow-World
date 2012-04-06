@@ -38,7 +38,7 @@ namespace Domain.Seedwork.Tests
             //Act
             bool resultOnEquals = entityLeft.Equals(entityRight);
             bool resultOnOperator = entityLeft == entityRight;
-
+            
             //Assert
             Assert.IsTrue(resultOnEquals);
             Assert.IsTrue(resultOnOperator);

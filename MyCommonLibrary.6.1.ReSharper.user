@@ -1,0 +1,731 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Cascade.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Contains.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Custom.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:DoesNotContain.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Empty.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Equal.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThanOrEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsDomain.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:IsEmailAddress.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThan.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:LessThanOrEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MinLength.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotBetween.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotEmpty.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotEqual.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotNaN.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:NotRegex.cs" caret="1" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Regex.cs" caret="1" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:RequiredString.cs" caret="1388" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:Required.cs" caret="1532" fromTop="17" />
+      <File id="61ABA6BD-7AFA-41A4-9468-87CA42020C88/f:ReadMe.txt/l:F!?MyCode?GitHub_MyCommonLibrary?ReadMe.txt" caret="1331" fromTop="24" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/f:CommonTest.cs" caret="398" fromTop="15" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:BaseClasses/f:Rule.cs" caret="941" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:GenericComparer.cs" caret="1055" fromTop="28" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:GreaterThan.cs" caret="1622" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/d:Rules/f:MaxLength.cs" caret="3074" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:Validator.cs" caret="31939" fromTop="27" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="2163" fromTop="18" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="260" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="23753" fromTop="3" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="1525" fromTop="12" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="75502" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="6368" fromTop="22" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="6994" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="76209" fromTop="11" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="3657" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="4033" fromTop="32" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="4439" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="76897" fromTop="20" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="17944" fromTop="19" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="18528" fromTop="33" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="5344" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="5861" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="83672" fromTop="17" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="77657" fromTop="24" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="54459" fromTop="16" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="64139" fromTop="18" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="24760" fromTop="15" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="36586" fromTop="13" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="37933" fromTop="34" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="312" fromTop="9" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="163" fromTop="5" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Declaration/f:ObjectExtendMethod.cs" caret="84671" fromTop="23" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="0" fromTop="0" />
+      <File id="106C7F00-C03F-4E29-87AF-ACD1BA292078/d:Validator/f:ValidationManager.cs" caret="860" fromTop="15" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1231" fromTop="24" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1032" fromTop="21" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="258" fromTop="7" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="1095" fromTop="19" />
+      <File id="7F302C0B-7C20-4CED-8E9A-C35E28C81889/d:Validation/f:MyValidationTest.cs" caret="931" fromTop="23" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False" />
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="source" priority="0" />
+      <Item value="using" priority="28" />
+      <Item value="Infrastructure" priority="5" />
+      <Item value="Crosscutting" priority="1" />
+      <Item value="Declaration" priority="1" />
+      <Item value="GetSet`0" priority="0" />
+      <Item value="foreach" priority="8" />
+      <Item value="Add`0" priority="0" />
+      <Item value="item" priority="0" />
+      <Item value="this" priority="27" />
+      <Item value="entity" priority="0" />
+      <Item value="interface" priority="0" />
+      <Item value="class" priority="3" />
+      <Item value="myLogger" priority="7" />
+      <Item value="traceData" priority="0" />
+      <Item value="exception" priority="0" />
+      <Item value="public" priority="76" />
+      <Item value="return" priority="16" />
+      <Item value="new" priority="58" />
+      <Item value="Log4NetProvider`0" priority="0" />
+      <Item value="NUnit" priority="1" />
+      <Item value="void" priority="27" />
+      <Item value="Console`0" priority="26" />
+      <Item value="Test" priority="16" />
+      <Item value="Log4NetFactory" priority="0" />
+      <Item value="factory" priority="21" />
+      <Item value="null" priority="24" />
+      <Item value="ILogger`0" priority="0" />
+      <Item value="LoggerFactory`0" priority="0" />
+      <Item value="try" priority="2" />
+      <Item value="throw" priority="2" />
+      <Item value="Exception" priority="0" />
+      <Item value="ex" priority="1" />
+      <Item value="NUnit.Framework" priority="0" />
+      <Item value="TestFixture" priority="1" />
+      <Item value="SetUp" priority="3" />
+      <Item value="Rhino" priority="0" />
+      <Item value="Rhino.Mocks" priority="0" />
+      <Item value="CrossCutting" priority="2" />
+      <Item value="Mocker`0" priority="0" />
+      <Item value="MockRepository`0" priority="0" />
+      <Item value="ICacheManager`0" priority="0" />
+      <Item value="_cacheManager" priority="4" />
+      <Item value="e" priority="1" />
+      <Item value="string" priority="37" />
+      <Item value="int" priority="8" />
+      <Item value="true" priority="5" />
+      <Item value="enum" priority="0" />
+      <Item value="MyEnum`0" priority="0" />
+      <Item value="Exception`0" priority="2" />
+      <Item value="ModuleRegisterTypesMap`0" priority="0" />
+      <Item value="CustomerAppService`0" priority="0" />
+      <Item value="typeAdapter" priority="1" />
+      <Item value="TypeAdapter" priority="0" />
+      <Item value="RegisterTypesMap`0" priority="0" />
+      <Item value="RegisterTypesMap" priority="0" />
+      <Item value="Customer" priority="0" />
+      <Item value="cus" priority="3" />
+      <Item value="Address" priority="0" />
+      <Item value="AddressLine1" priority="0" />
+      <Item value="AddressLine2" priority="0" />
+      <Item value="City" priority="0" />
+      <Item value="Company" priority="1" />
+      <Item value="FirstName" priority="1" />
+      <Item value="LastName" priority="1" />
+      <Item value="Telephone" priority="1" />
+      <Item value="ZipCode" priority="0" />
+      <Item value="Customer`0" priority="1" />
+      <Item value="var" priority="26" />
+      <Item value="Picture" priority="0" />
+      <Item value="ImgPath" priority="0" />
+      <Item value="exp" priority="1" />
+      <Item value="dto" priority="0" />
+      <Item value="c" priority="1" />
+      <Item value="map" priority="0" />
+      <Item value="CustomEngine`0" priority="0" />
+      <Item value="container" priority="0" />
+      <Item value="MemoryCacheManager`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="T`0" priority="3" />
+      <Item value="instanceType" priority="0" />
+      <Item value="type" priority="0" />
+      <Item value="false" priority="3" />
+      <Item value="myEnginee" priority="0" />
+      <Item value="memoryCache" priority="1" />
+      <Item value="s" priority="6" />
+      <Item value="connection" priority="9" />
+      <Item value="System" priority="4" />
+      <Item value="Data" priority="5" />
+      <Item value="SqlClient" priority="2" />
+      <Item value="SqlConnection`0" priority="5" />
+      <Item value="if" priority="7" />
+      <Item value="else" priority="1" />
+      <Item value="is" priority="1" />
+      <Item value="Sql" priority="0" />
+      <Item value="Odbc" priority="0" />
+      <Item value="OleDb" priority="0" />
+      <Item value="OleDbConnection`0" priority="0" />
+      <Item value="command" priority="11" />
+      <Item value="IDbDataAdapter`0" priority="0" />
+      <Item value="adapter" priority="24" />
+      <Item value="Common" priority="0" />
+      <Item value="DataAdapter`0" priority="0" />
+      <Item value="dataAdapter" priority="0" />
+      <Item value="DataAdapter" priority="0" />
+      <Item value="SqlDataAdapter`0" priority="1" />
+      <Item value="SqlDataAdapter" priority="0" />
+      <Item value="sdAdapter" priority="1" />
+      <Item value="SqlConnection" priority="0" />
+      <Item value="conn" priority="6" />
+      <Item value="sqAdapter" priority="4" />
+      <Item value="DataSet" priority="0" />
+      <Item value="DataTable`0" priority="13" />
+      <Item value="DataTable" priority="2" />
+      <Item value="dt" priority="37" />
+      <Item value="DbCommandBuilder`0" priority="2" />
+      <Item value="SqlCommandBuilder`0" priority="2" />
+      <Item value="builder" priority="21" />
+      <Item value="ctor" priority="1" />
+      <Item value="DbDataAdapter`0" priority="0" />
+      <Item value="Contract`0" priority="7" />
+      <Item value="ArgumentException`0" priority="3" />
+      <Item value="connString" priority="8" />
+      <Item value="DbProviderFactories`0" priority="1" />
+      <Item value="isolationLevel" priority="1" />
+      <Item value="DbCommand`0" priority="11" />
+      <Item value="DbExecutor`0" priority="8" />
+      <Item value="DbExecutor" priority="4" />
+      <Item value="db" priority="29" />
+      <Item value="Assert`0" priority="11" />
+      <Item value="SqlClientFactory`0" priority="8" />
+      <Item value="dt1" priority="2" />
+      <Item value="count" priority="1" />
+      <Item value="DataSet`0" priority="9" />
+      <Item value="ds" priority="16" />
+      <Item value="dtTarget" priority="2" />
+      <Item value="ConnectionState`0" priority="0" />
+      <Item value="tableName" priority="1" />
+      <Item value="CommandType`0" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="DataRow`0" priority="6" />
+      <Item value="dr" priority="11" />
+      <Item value="CodeTimer`0" priority="1" />
+      <Item value="SqlCommandBuilder" priority="1" />
+      <Item value="dbCommand" priority="0" />
+      <Item value="parm" priority="7" />
+      <Item value="dbCmd" priority="3" />
+      <Item value="parameter" priority="4" />
+      <Item value="ObjectCopier`0" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="DbParameter`0" priority="1" />
+      <Item value="dbParameter" priority="7" />
+      <Item value="DbType" priority="0" />
+      <Item value="Array`0" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="mydt" priority="1" />
+      <Item value="dsTarget" priority="1" />
+      <Item value="CommitTable`0" priority="0" />
+      <Item value="table" priority="0" />
+      <Item value="errMsg" priority="1" />
+      <Item value="dr1" priority="3" />
+      <Item value="drT" priority="1" />
+      <Item value="DateTime`0" priority="8" />
+      <Item value="dbProvider" priority="0" />
+      <Item value="static" priority="6" />
+      <Item value="dbProviderFactory" priority="0" />
+      <Item value="build" priority="2" />
+      <Item value="adp" priority="3" />
+      <Item value="cmd" priority="3" />
+      <Item value="finally" priority="0" />
+      <Item value="newDr" priority="3" />
+      <Item value="ReadCommitted" priority="1" />
+      <Item value="tmpCmd" priority="2" />
+      <Item value="transaction" priority="3" />
+      <Item value="DbTransaction`0" priority="1" />
+      <Item value="VARIABLE" priority="0" />
+      <Item value="v" priority="1" />
+      <Item value="mark" priority="0" />
+      <Item value="IDbConnection`0" priority="2" />
+      <Item value="exec" priority="1" />
+      <Item value="sqlQuery" priority="1" />
+      <Item value="commandType" priority="1" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+      <Item value="Constraint`0" priority="0" />
+      <Item value="strs" priority="2" />
+      <Item value="Length" priority="0" />
+      <Item value="decimal" priority="2" />
+      <Item value="Id" priority="0" />
+      <Item value="IdentityGenerator`0" priority="0" />
+      <Item value="IsEnabled" priority="1" />
+      <Item value="FullName" priority="0" />
+      <Item value="byte" priority="0" />
+      <Item value="ba" priority="1" />
+      <Item value="BackAccountState`0" priority="2" />
+      <Item value="BackAccountState" priority="2" />
+      <Item value="State" priority="0" />
+      <Item value="value" priority="0" />
+      <Item value="SqlParameter`0" priority="0" />
+      <Item value="SqlParameter" priority="0" />
+      <Item value="Int" priority="0" />
+      <Item value="Output" priority="1" />
+      <Item value="par" priority="1" />
+      <Item value="p" priority="1" />
+      <Item value="IDbDataParameter`0" priority="0" />
+      <Item value="DbContext`0" priority="5" />
+      <Item value="TestDbContext`0" priority="0" />
+      <Item value="TestDbContext" priority="0" />
+      <Item value="IDbContextStorage`0" priority="0" />
+      <Item value="Ado" priority="0" />
+      <Item value="Dapper" priority="0" />
+      <Item value="lst" priority="1" />
+      <Item value="Guid`0" priority="2" />
+      <Item value="sql" priority="1" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="FileAssert`0" priority="0" />
+      <Item value="FileHelper`0" priority="1" />
+      <Item value="RmbHelperTest`0" priority="0" />
+      <Item value="EfUnitOfWork`0" priority="0" />
+      <Item value="context" priority="1" />
+      <Item value="EfRepository" priority="0" />
+      <Item value="IUnitOfWork`0" priority="1" />
+      <Item value="DbContext" priority="2" />
+      <Item value="TEntity`0" priority="1" />
+      <Item value="DbSet" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="IBankAccountRepository`0" priority="0" />
+      <Item value="_bankAccountRepository" priority="2" />
+      <Item value="EfBankAccountRepository`0" priority="0" />
+      <Item value="DbContextProvider" priority="1" />
+      <Item value="DbContextManager`0" priority="1" />
+      <Item value="protected" priority="1" />
+      <Item value="override" priority="1" />
+      <Item value="bankAccountRepository" priority="0" />
+      <Item value="EfBankAccountRepository" priority="0" />
+      <Item value="customerRepository" priority="0" />
+      <Item value="EfCustomerRepository" priority="0" />
+      <Item value="dbModel" priority="0" />
+      <Item value="ctx" priority="0" />
+      <Item value="dbContext" priority="1" />
+      <Item value="ISql`0" priority="0" />
+      <Item value="bankAccount" priority="1" />
+      <Item value="IDisposable`0" priority="0" />
+      <Item value="HttpHelps" priority="1" />
+      <Item value="h" priority="2" />
+      <Item value="Encoding`0" priority="1" />
+      <Item value="HttpHelps`0" priority="3" />
+      <Item value="Navigate`0" priority="0" />
+      <Item value="textBox1" priority="0" />
+      <Item value="webBrowser1" priority="1" />
+      <Item value="response" priority="0" />
+      <Item value="ExcelHelper" priority="0" />
+      <Item value="const" priority="1" />
+      <Item value="str" priority="4" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="result" priority="0" />
+      <Item value="entityValidator" priority="1" />
+      <Item value="validationContext" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="ValidationManager`0" priority="1" />
+      <Item value="A`0" priority="3" />
+      <Item value="a" priority="1" />
+      <Item value="A" priority="0" />
+      <Item value="instent" priority="4" />
+      <Item value="IsSecuss" priority="0" />
+      <Item value="ItemA" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="GreaterThanOrEqual" priority="0" />
+      <Item value="Guid" priority="0" />
+      <Item value="g" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Repository`1">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:log4net.ILog">
+      <Item value="Info`0" priority="2" />
+      <Item value="InfoFormat`0" priority="0" />
+      <Item value="Warn`0" priority="0" />
+      <Item value="Error`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="27" />
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.NetFramework.Logging.Log4Net.Log4NetFactory">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Logging.LoggerFactory">
+      <Item value="SetCurrent`0" priority="0" />
+      <Item value="CreateLog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Logging.ILogger">
+      <Item value="LogInfo`0" priority="0" />
+      <Item value="LogError`0" priority="2" />
+      <Item value="LogWarning`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rhino.Mocks.MockRepository">
+      <Item value="GenerateMock`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Caching.ICacheManager">
+      <Item value="Expect`2" priority="0" />
+      <Item value="Get`1" priority="5" />
+      <Item value="Set`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IMethodOptions`1">
+      <Item value="Return`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Tests.CommonTest+MyEnum">
+      <Item value="Get" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.CommonTest+MyEnum">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.Model.Customer">
+      <Item value="Address" priority="0" />
+      <Item value="Picture" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Adapters.ITypeAdapter">
+      <Item value="Adapt`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AutoMapper.IMappingExpression`2">
+      <Item value="ForMember`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.Dtos.CustomerDto">
+      <Item value="ImgPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AutoMapper.IMemberConfigurationExpression`1">
+      <Item value="MapFrom`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.Model.Picture">
+      <Item value="ImgPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Practices.Unity.IUnityContainer">
+      <Item value="RegisterType`0" priority="2" />
+      <Item value="Resolve`0" priority="0" />
+      <Item value="IsRegistered`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Core.EngineContext">
+      <Item value="Initialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Core.IEngine">
+      <Item value="RegisterType`0" priority="0" />
+      <Item value="GetInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlDataAdapter">
+      <Item value="InsertCommand" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbDataAdapter">
+      <Item value="InsertCommand" priority="4" />
+      <Item value="UpdateCommand" priority="1" />
+      <Item value="Fill`0" priority="3" />
+      <Item value="Update`0" priority="2" />
+      <Item value="SelectCommand" priority="4" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="ResetFillLoadOption`0" priority="1" />
+      <Item value="DeleteCommand" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlConnection">
+      <Item value="Open`0" priority="0" />
+      <Item value="CreateCommand`0" priority="0" />
+      <Item value="Query`6" priority="0" />
+      <Item value="Execute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="2" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="IsNullOrWhiteSpace`0" priority="3" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="21" />
+      <Item value="NewRow`0" priority="3" />
+      <Item value="AsDataView`0" priority="0" />
+      <Item value="Columns" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbCommandBuilder">
+      <Item value="DataAdapter" priority="3" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="GetInsertCommand`0" priority="11" />
+      <Item value="RefreshSchema`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Contracts.Contract">
+      <Item value="Requires`1" priority="3" />
+      <Item value="Ensures`0" priority="2" />
+      <Item value="Assert`0" priority="0" />
+      <Item value="Assume`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ado.DbExecutor">
+      <Item value="connection" priority="0" />
+      <Item value="adapter" priority="2" />
+      <Item value="builder" priority="0" />
+      <Item value="GetTable`0" priority="6" />
+      <Item value="ExecuteNonQuery`0" priority="2" />
+      <Item value="GetTables`0" priority="3" />
+      <Item value="command" priority="12" />
+      <Item value="CommitData`0" priority="2" />
+      <Item value="CommitTable`0" priority="5" />
+      <Item value="Test`0" priority="0" />
+      <Item value="CommitTables`0" priority="0" />
+      <Item value="BeginGetTable`0" priority="1" />
+      <Item value="EndCommitTable`0" priority="1" />
+      <Item value="TransactionComplete`0" priority="1" />
+      <Item value="ExecuteReader`0" priority="0" />
+      <Item value="Select`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbProviderFactory">
+      <Item value="CreateConnection`0" priority="1" />
+      <Item value="CreateDataAdapter`0" priority="3" />
+      <Item value="CreateCommandBuilder`0" priority="3" />
+      <Item value="CreateCommand`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDbConnection">
+      <Item value="ConnectionString" priority="0" />
+      <Item value="State" priority="0" />
+      <Item value="Open`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDbDataAdapter">
+      <Item value="SelectCommand" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.SqlClient.SqlClientFactory">
+      <Item value="Instance" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="4" />
+      <Item value="IsNull`0" priority="0" />
+      <Item value="IsNotNull`0" priority="7" />
+      <Item value="AreNotEqual`0" priority="0" />
+      <Item value="IsTrue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Count" priority="6" />
+      <Item value="Add`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="Tables" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTableCollection">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.ConnectionState">
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.CommandType">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbCommand">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="CommandText" priority="7" />
+      <Item value="Parameters" priority="14" />
+      <Item value="CommandType" priority="1" />
+      <Item value="CreateParameter`0" priority="0" />
+      <Item value="Cancel`0" priority="0" />
+      <Item value="Transaction" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CodeTimer">
+      <Item value="Time`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumnCollection">
+      <Item value="Add`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbParameterCollection">
+      <Item value="Add`0" priority="3" />
+      <Item value="AddRange`0" priority="1" />
+      <Item value="CopyTo`0" priority="0" />
+      <Item value="Clear`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbParameter">
+      <Item value="DbType" priority="4" />
+      <Item value="Direction" priority="1" />
+      <Item value="ParameterName" priority="1" />
+      <Item value="Size" priority="1" />
+      <Item value="Value" priority="1" />
+      <Item value="SourceColumn" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Data.Ado.DbExecutor+ObjectCopier">
+      <Item value="Clone`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Select`2" priority="1" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDataRecord">
+      <Item value="Indexer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Data.Ado.DbExecutor">
+      <Item value="GetTable`0" priority="0" />
+      <Item value="GetTables`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbConnection">
+      <Item value="ConnectionString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRow">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.Util">
+      <Item value="To`1" priority="0" />
+      <Item value="TableToArray`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Domain.Seedwork.IdentityGenerator">
+      <Item value="NewSequentialGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Data.Ef.Test.Initializers.AssemblyTestsInitialize">
+      <Item value="RebuildUnitOfWork`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Test.UnitOfWork.Mapping.BankAccountEntityTypeConfiguration">
+      <Item value="Property`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Test.BankingModule.Aggregates.BankAccountAgg.BankAccount">
+      <Item value="CreateTime" priority="1" />
+      <Item value="State" priority="0" />
+      <Item value="BankAccountNumber" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.DateTimePropertyConfiguration">
+      <Item value="HasColumnType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration">
+      <Item value="HasColumnType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameter">
+      <Item value="Direction" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDbCommand">
+      <Item value="Parameters" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDataParameterCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ado.Internal.ExpressionAccessor">
+      <Item value="GetValueDirect" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.FileHelper">
+      <Item value="GetFileNames`0" priority="0" />
+      <Item value="CopyFolder`0" priority="0" />
+      <Item value="DeleteDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.RmbHelper">
+      <Item value="CmycurD`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.EfUnitOfWork">
+      <Item value="_dbContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.DbContext">
+      <Item value="Set`0" priority="0" />
+      <Item value="Database" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbModel">
+      <Item value="Compile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbCompiledModel">
+      <Item value="CreateObjectContext`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Ef.Test.BankingModule.Aggregates.BankAccountAgg.IBankAccountRepository">
+      <Item value="UnitOfWork" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Data.Core.IUnitOfWork">
+      <Item value="SaveChanges`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HttpHelps">
+      <Item value="GetHttpRequestStringByNUll_Get`0" priority="0" />
+      <Item value="GetHttpRequestStringByNUll_GetBycookie`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="0" />
+      <Item value="Default" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.HttpHelper">
+      <Item value="GETDataToUrl`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HttpHelps">
+      <Item value="GetCookieString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.WebBrowser">
+      <Item value="Document" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="DocumentText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.HtmlDocument">
+      <Item value="Cookie" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Utility.CommomHelper.ExcelHelper">
+      <Item value="GetExcelData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.WinformTest.HttpHelps">
+      <Item value="GetCookieString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="GetNumber`0" priority="0" />
+      <Item value="GetNumberInt`0" priority="0" />
+      <Item value="Split`0" priority="1" />
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.License.LicenseKey">
+      <Item value="Value`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.CrossCutting.Cryptography.Crypto">
+      <Item value="Encrypt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Validator.IEntityValidator">
+      <Item value="IsValid`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Infrastructure.Crosscutting.Validator.ValidationManager">
+      <Item value="GetValidator`0" priority="0" />
+      <Item value="Validate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Validator.Validator`1">
+      <Item value="GreaterThan`1" priority="0" />
+      <Item value="MaxLength`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Infrastructure.Crosscutting.Tests.Validation.A">
+      <Item value="ItemA" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="FormatToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="FormatToString`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
