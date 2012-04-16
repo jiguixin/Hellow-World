@@ -5,3 +5,9 @@
 /TestResults/
 _ReSharper*/
 *.ReSharper
+*.suo
+*.user
+*.csproj.user
+*.resharper.user
+*.cache
+obj
