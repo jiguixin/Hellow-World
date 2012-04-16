@@ -1,5 +1,0 @@
-E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Security\bin\Debug\Infrastructure.Crosscutting.Security.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Security\bin\Debug\Infrastructure.Crosscutting.Security.pdb
-E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Security\obj\Debug\ResolveAssemblyReference.cache
-E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Security\obj\Debug\Infrastructure.Crosscutting.Security.dll
-E:\MyCode\MyCommonLibrary\Infrastructure.Crosscutting.Security\obj\Debug\Infrastructure.Crosscutting.Security.pdb
