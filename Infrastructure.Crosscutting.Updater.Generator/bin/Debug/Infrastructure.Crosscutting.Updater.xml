@@ -7201,7 +7201,7 @@
         </member>
         <member name="P:Infrastructure.Crosscutting.Updater.SR.DonotRunMeDirectly">
             <summary>
-              查找类似 我是用来进行自动更新的, 请不要直接双击我,可以用带命令行参数形式。 的本地化字符串。
+              查找类似 我是用来进行自动更新的, 请不要直接双击我. 的本地化字符串。
             </summary>
         </member>
         <member name="P:Infrastructure.Crosscutting.Updater.SR.UpdateFound_Desc">
