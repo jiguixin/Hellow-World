@@ -47,10 +47,15 @@
     <Compile Include="Core\Jsonp\JsonpController.cs" />
     <Compile Include="Core\Jsonp\JsonpResult.cs" />
     <Compile Include="Core\Jsonp\JsonpViewResult.cs" />
+    <Compile Include="Filters\RequestLogFilter.cs" />
+    <Compile Include="Filters\RequestTimingFilter.cs" />
+    <Compile Include="Filters\RequestTimingFilterProvider.cs" />
+    <Compile Include="Filters\TraceActionFilterAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Core\Jsonp\ReadMe.txt" />
+    <Content Include="Filters\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
