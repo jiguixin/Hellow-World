@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Infrastructure.Crosscutting.Declaration
 {
@@ -13,11 +10,40 @@ namespace Infrastructure.Crosscutting.Declaration
     public class PageParam
     {
         /// <summary>
+        /// 总页数,作为传出参数
+        /// </summary>
+        public int Count;
+
+        /// <summary>
+        /// 当前页码
+        /// </summary>
+        public int Index;
+
+        /// <summary>
+        /// 排序字段
+        /// </summary>
+        public string OrderBy;
+
+        /// <summary>
+        /// 排序类型 asc / desc
+        /// </summary>
+        public string OrderType;
+
+        /// <summary>
+        /// 页大小
+        /// </summary>
+        public int Size;
+
+        /// <summary>
+        /// 总记录数,作为传出参数
+        /// </summary>
+        public int Total;
+
+        /// <summary>
         /// 无参数的构造方法
         /// </summary>
         public PageParam()
         {
-
         }
 
         /// <summary>
@@ -30,30 +56,5 @@ namespace Infrastructure.Crosscutting.Declaration
             Index = index;
             Size = size;
         }
-
-        /// <summary>
-        /// 当前页码
-        /// </summary>
-        public int Index;
-        /// <summary>
-        /// 页大小
-        /// </summary>
-        public int Size;
-        /// <summary>
-        /// 总记录数,作为传出参数
-        /// </summary>
-        public int Total;
-        /// <summary>
-        /// 总页数,作为传出参数
-        /// </summary>
-        public int Count;
-        /// <summary>
-        /// 排序字段
-        /// </summary>
-        public string OrderBy;
-        /// <summary>
-        /// 排序类型 asc / desc
-        /// </summary>
-        public string OrderType;
     }
 }

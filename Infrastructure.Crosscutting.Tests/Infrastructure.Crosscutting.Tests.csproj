@@ -72,6 +72,8 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
@@ -99,6 +101,7 @@
     <Compile Include="RhinoMockTest.cs" />
     <Compile Include="TraceSourceLogTests.cs" />
     <Compile Include="TypeAdapterTests.cs" />
+    <Compile Include="Utility\CommomHelper\ExcelHelperTest.cs" />
     <Compile Include="Utility\CommomHelper\FileHelperTest.cs" />
     <Compile Include="Utility\CommomHelper\HttpHelperTest.cs" />
     <Compile Include="Utility\CommomHelper\RmbHelperTest.cs" />

@@ -1,6 +1,6 @@
 ﻿
 Tasks 功能目录
-
+ 
 该目录下面的类，主要是为了完成程序的后台任务。
 
 一般是功能配置文件的方式记录
@@ -24,3 +24,28 @@ Tasks 功能目录
     <Themes basePath="~/Themes/" />
   </NopConfig>
  
+调用代码如下：
+
+    void Application_Start(object sender, EventArgs e)
+    {
+        // Code that runs on application startup
+        NopConfig.Init();
+        if (InstallerHelper.ConnectionStringIsSet())
+        {
+            //initialize IoC
+            IoC.InitializeWith(new DependencyResolverFactory());
+            
+            //initialize task manager
+            TaskManager.Instance.Initialize(NopConfig.ScheduleTasks);
+            TaskManager.Instance.Start();
+        }
+    }
+    
+    void Application_End(object sender, EventArgs e)
+    {
+        //  Code that runs on application shutdown
+        if (InstallerHelper.ConnectionStringIsSet())
+        {
+            TaskManager.Instance.Stop();
+        }
+    }

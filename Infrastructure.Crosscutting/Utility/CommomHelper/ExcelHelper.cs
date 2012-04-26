@@ -2,122 +2,329 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
+using System.IO;
 using System.Linq;
 using System.Text;
+using Infrastructure.Crosscutting.Declaration;
 
 namespace Infrastructure.Crosscutting.Utility.CommomHelper
 {
-    public class ExcelHelper
+    /// <summary>
+    /// Excel helper
+    /// </summary>
+    public partial class ExcelHelper : IDisposable
     {
-        private const string connStringExcel03 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=\"Excel 12.0;HDR=YES\"";
- 
+        #region Fileds
+        private string _excelObject = "Provider=Microsoft.{0}.OLEDB.{1};Data Source={2};Extended Properties=\"Excel {3};HDR={4};IMEX={5}\"";
+        private string _filepath = string.Empty;
+        private string _hdr = "No";
+        private string _imex = "1";
+        private OleDbConnection _con;
+        #endregion
+
+        #region Ctor
         /// <summary>
-        /// 得到EXCEL的第一张表格的数据
+        /// Ctor
         /// </summary>
-        /// <param name="filePath">文件路径 可以是EXCEL2003 也可以是EXCEL2007</param> 
-        /// <returns>第一个表的内容</returns>
-        public static DataTable GetExcelData(string filePath)
+        /// <param name="filepath">Excel file path</param>
+        public ExcelHelper(string filepath)
         {
-            List<string> lst;
-            OleDbConnection conn = GetTableNames( filePath, out lst);
+            this._filepath = filepath;
+        }
+        #endregion
 
-            conn.Open();
+        #region Methods
 
-            var ds = OleDbHelper.ExecuteDataset(conn, CommandType.Text, "select * from [" + lst[0] + "]");
+        /// <summary>
+        /// Gets a schema
+        /// </summary>
+        /// <returns>Schema</returns>
+        public DataTable GetSchema()
+        {
+            DataTable dtSchema = null;
+            if (this.Connection.State != ConnectionState.Open) this.Connection.Open();
+            dtSchema = this.Connection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, new object[] { null, null, null, "TABLE" });
+            return dtSchema;
+        }
 
-            if (ds == null || ds.Tables.Count <= 0)
+        /// <summary>
+        /// Read all table rows
+        /// </summary>
+        /// <param name="tableName">Table Name</param>
+        /// <returns>Table</returns>
+        public DataTable ReadTable(string tableName)
+        {
+            return this.ReadTable(tableName, ExcelHelperReadTableMode.ReadFromWorkSheet);
+        }
+
+        /// <summary>
+        /// Read table
+        /// </summary>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="mode">Read mode</param>
+        /// <returns>Table</returns>
+        public DataTable ReadTable(string tableName, ExcelHelperReadTableMode mode)
+        {
+            return this.ReadTable(tableName, mode, "");
+        }
+
+        /// <summary>
+        /// Read table
+        /// </summary>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="mode">Read mode</param>
+        /// <param name="criteria">Criteria</param>
+        /// <returns>Table</returns>
+        public DataTable ReadTable(string tableName, ExcelHelperReadTableMode mode, string criteria)
+        {
+            if (this.Connection.State != ConnectionState.Open)
             {
-                conn.Close();
+                this.Connection.Open();
+            }
+            string cmdText = "Select * from [{0}]";
+            if (!string.IsNullOrEmpty(criteria))
+            {
+                cmdText += " Where " + criteria;
+            }
+            string tableNameSuffix = string.Empty;
+            if (mode == ExcelHelperReadTableMode.ReadFromWorkSheet)
+                tableNameSuffix = "$";
+
+            OleDbCommand cmd = new OleDbCommand(string.Format(cmdText, tableName + tableNameSuffix));
+            cmd.Connection = this.Connection;
+            OleDbDataAdapter adpt = new OleDbDataAdapter(cmd);
+
+            DataSet ds = new DataSet();
+
+            adpt.Fill(ds, tableName);
+
+            if (ds.Tables.Count >= 1)
+            {
+                return ds.Tables[0];
+            }
+            else
+            {
                 return null;
             }
-
-            DataTable dt = ds.Tables[0];
-
-            conn.Close();
-            return dt;
         }
 
         /// <summary>
-        /// 得到EXCEL下的所有表名
+        /// Drop table
         /// </summary>
-        /// <param name="filePath">文件路径</param>
-        /// <param name="lst">一组表名</param>
-        /// <returns></returns>
-        private static OleDbConnection GetTableNames(string filePath, out List<string> lst)
+        /// <param name="tableName">Table Name</param>
+        public void DropTable(string tableName)
         {
-            string connStr = string.Empty;
-
-            connStr = string.Format(connStringExcel03, filePath);
-
-            OleDbConnection conn = new OleDbConnection(connStr);
-            try
+            if (this.Connection.State != ConnectionState.Open)
             {
-                conn.Open();
-            }
-            catch
-            {
+                this.Connection.Open();
 
             }
-            DataTable dtb = conn.GetOleDbSchemaTable(System.Data.OleDb.OleDbSchemaGuid.Tables,
-                                                     new object[] { null, null, null, "Table" });
-            lst = new List<string>();
-            foreach (DataRow dr in dtb.Rows)
+            string cmdText = "Drop Table [{0}]";
+            using (OleDbCommand cmd = new OleDbCommand(string.Format(cmdText, tableName), this.Connection))
             {
-                string tbname = dr["TABLE_NAME"].ToString();
-                lst.Add(tbname);
+                cmd.ExecuteNonQuery();
+
             }
-            conn.Close();
-            return conn;
+            this.Connection.Close();
         }
 
         /// <summary>
-        /// 得到EXCEL的指定表格的数据
+        /// Write table
         /// </summary>
-        /// <param name="filePath">文件路径</param>
-        /// <param name="sheetName">可以查整个Sheet， 注：如果只想读取A1到B2的内容 Sheet1$A1:B2 。 表名不需要加[]</param>
-        /// <returns></returns>
-        public static DataTable GetExcelData(string filePath, string sheetName)
+        /// <param name="tableName">Table Name</param>
+        /// <param name="tableDefinition">Table Definition</param>
+        public void WriteTable(string tableName, Dictionary<string, string> tableDefinition)
         {
-            string connStr = string.Empty;
-
-            connStr = string.Format(connStringExcel03, filePath);
-
-            var ds = OleDbHelper.ExecuteDataset(connStr, CommandType.Text,
-                                                string.Format("select * from [{0}]", sheetName));
-
-            if (ds == null || ds.Tables.Count <= 0)
+            using (OleDbCommand cmd = new OleDbCommand(this.GenerateCreateTable(tableName, tableDefinition), this.Connection))
             {
-                return null;
+                if (this.Connection.State != ConnectionState.Open) this.Connection.Open();
+                cmd.ExecuteNonQuery();
             }
-
-            return ds.Tables[0];
         }
 
         /// <summary>
-        /// 得到所有的SHEET表格
+        /// Add new row
         /// </summary>
-        /// <param name="filePath">文件路径</param>
-        /// <returns></returns>
-        public static DataSet GetExcelDataSet(string filePath)
-        { 
-            List<string> lst;
-            OleDbConnection conn = GetTableNames(filePath, out lst);
-            conn.Open();
-            DataSet ds = new DataSet("test");
-            foreach (var s in lst)
-            {
-                OleDbDataAdapter myCommand = null;
-                DataTable dt = new DataTable();
-
-                //从指定的表明查询数据,可先把所有表明列出来供用户选择
-                string strExcel = "select * from [" + s + "]";
-                myCommand = new OleDbDataAdapter(strExcel, conn);
-                dt = new DataTable();
-                myCommand.Fill(dt);
-                ds.Tables.Add(dt); 
-            } 
-            conn.Close();
-            return ds; 
+        /// <param name="dr">Data Row</param>
+        public void AddNewRow(DataRow dr)
+        {
+            string command = this.GenerateInsertStatement(dr);
+            ExecuteCommand(command);
         }
+
+        /// <summary>
+        /// Execute new command
+        /// </summary>
+        /// <param name="command">Command</param>
+        public void ExecuteCommand(string command)
+        {
+            using (OleDbCommand cmd = new OleDbCommand(command, this.Connection))
+            {
+                if (this.Connection.State != ConnectionState.Open) this.Connection.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        /// <summary>
+        /// Generates create table script
+        /// </summary>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="tableDefinition">Table Definition</param>
+        /// <returns>Create table script</returns>
+        private string GenerateCreateTable(string tableName, Dictionary<string, string> tableDefinition)
+        {
+
+            StringBuilder sb = new StringBuilder();
+            bool firstcol = true;
+            sb.AppendFormat("CREATE TABLE [{0}](", tableName);
+            firstcol = true;
+            foreach (KeyValuePair<string, string> keyvalue in tableDefinition)
+            {
+                if (!firstcol)
+                {
+                    sb.Append(",");
+                }
+                firstcol = false;
+                sb.AppendFormat("{0} {1}", keyvalue.Key, keyvalue.Value);
+            }
+
+            sb.Append(")");
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Generates insert statement script
+        /// </summary>
+        /// <param name="dr">Data row</param>
+        /// <returns>Insert statement script</returns>
+        private string GenerateInsertStatement(DataRow dr)
+        {
+            StringBuilder sb = new StringBuilder();
+            bool firstcol = true;
+            sb.AppendFormat("INSERT INTO [{0}](", dr.Table.TableName);
+
+
+            foreach (DataColumn dc in dr.Table.Columns)
+            {
+                if (!firstcol)
+                {
+                    sb.Append(",");
+                }
+                firstcol = false;
+
+                sb.Append(dc.Caption);
+            }
+
+            sb.Append(") VALUES(");
+            firstcol = true;
+            for (int i = 0; i <= dr.Table.Columns.Count - 1; i++)
+            {
+                if (!object.ReferenceEquals(dr.Table.Columns[i].DataType, typeof(int)))
+                {
+                    sb.Append("'");
+                    sb.Append(dr[i].ToString().Replace("'", "''"));
+                    sb.Append("'");
+                }
+                else
+                {
+                    sb.Append(dr[i].ToString().Replace("'", "''"));
+                }
+                if (i != dr.Table.Columns.Count - 1)
+                {
+                    sb.Append(",");
+                }
+            }
+
+            sb.Append(")");
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Dispose
+        /// </summary>
+        public void Dispose()
+        {
+            if (this._con != null && this._con.State == ConnectionState.Open)
+                this._con.Close();
+            if (this._con != null)
+                this._con.Dispose();
+            this._con = null;
+            this._filepath = string.Empty;
+        }
+        #endregion
+
+        #region Properties
+        /// <summary>
+        /// Gets connection string
+        /// </summary>
+        public string ConnectionString
+        {
+            get
+            {
+                string result = string.Empty;
+                if (String.IsNullOrEmpty(this._filepath))
+                    return result;
+
+                //Check for File Format
+                FileInfo fi = new FileInfo(this._filepath);
+                if (fi.Extension.Equals(".xls"))
+                {
+                    result = string.Format(this._excelObject, "Jet", "4.0", this._filepath, "8.0", this._hdr, this._imex);
+                }
+                else if (fi.Extension.Equals(".xlsx"))
+                {
+                    result = string.Format(this._excelObject, "Ace", "12.0", this._filepath, "12.0", this._hdr, this._imex);
+                }
+                return result;
+            }
+        }
+
+        /// <summary>
+        /// Gets connection
+        /// </summary>
+        public OleDbConnection Connection
+        {
+            get
+            {
+                if (_con == null)
+                {
+                    this._con = new OleDbConnection { ConnectionString = this.ConnectionString };
+                }
+                return this._con;
+            }
+        }
+
+        /// <summary>
+        /// “No” 就表示不把第一行数据作为标头
+        /// “YES” 表示将第一行数据作为表头
+        /// </summary>
+        public string Hdr
+        {
+            get
+            {
+                return this._hdr;
+            }
+            set
+            {
+                this._hdr = value;
+            }
+        }
+
+        /// <summary>
+        ///  如果为“0”则表示没有这个EXCEL文件就新建一个文件。
+        ///  如果为“1”则表示只打开Excel文件，如果没有这个文件就会报错。
+        /// </summary>
+        public string Imex
+        {
+            get
+            {
+                return this._imex;
+            }
+            set
+            {
+                this._imex = value;
+            }
+        }
+        #endregion
     }
 }

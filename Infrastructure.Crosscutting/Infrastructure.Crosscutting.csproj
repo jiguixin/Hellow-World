@@ -87,9 +87,11 @@
     <Compile Include="Declaration\Enums.cs" />
     <Compile Include="Declaration\GenericComparer.cs" />
     <Compile Include="Declaration\GenericEqualityComparer.cs" />
+    <Compile Include="Declaration\IPagedList.cs" />
     <Compile Include="Declaration\NameId.cs" />
     <Compile Include="Declaration\NameValue.cs" />
     <Compile Include="Declaration\ObjectExtendMethod.cs" />
+    <Compile Include="Declaration\PagedList.cs" />
     <Compile Include="Declaration\PageParam.cs" />
     <Compile Include="Exceptions\MyException.cs" />
     <Compile Include="IoC\IInstanceLocator.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Tasks\TaskManager.cs" />
     <Compile Include="Tasks\TaskThread.cs" />
     <Compile Include="Utility\CodeTimer.cs" />
+    <Compile Include="Utility\CommomHelper\ExcelHelper.Static.cs" />
     <Compile Include="Utility\CommomHelper\ExcelHelper.cs" />
     <Compile Include="Utility\CommomHelper\FileHelper.cs" />
     <Compile Include="Utility\CommomHelper\HttpHelper.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="Utility\CommomHelper\SqlHelper.cs" />
     <Compile Include="Utility\CommomHelper\TextHelper.cs" />
     <Compile Include="Utility\CommomHelper\TimeHelper.cs" />
+    <Compile Include="Utility\CommomHelper\XmlHelper.cs" />
     <Compile Include="Utility\CustomAttribute\LocalizableDescriptionAttribute.cs" />
     <Compile Include="Utility\Util.cs" />
     <Compile Include="Validator\BaseClasses\BaseAttribute.cs" />

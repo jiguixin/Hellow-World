@@ -48,6 +48,7 @@
     <Compile Include="Declaration\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Declaration\RemotePost.cs" />
     <Compile Include="Fakes\FakeHttpContext.cs">
       <SubType>Code</SubType>
     </Compile>

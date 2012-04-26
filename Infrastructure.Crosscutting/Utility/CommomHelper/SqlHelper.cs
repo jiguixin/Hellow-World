@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
-using System.Collections;
 using Infrastructure.Crosscutting.Declaration;
 
 namespace Infrastructure.Crosscutting.Utility.CommomHelper
@@ -14,17 +14,16 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
     /// </summary>
     public abstract class SqlHelper
     {
-
         //Database connection strings
         public static readonly string ConnStr =
             string.Format("server={0};database={1};uid={2};password={3};",
-            ConfigurationManager.AppSettings["Server"],
-            ConfigurationManager.AppSettings["Database"],
-            ConfigurationManager.AppSettings["UserId"],
-            ConfigurationManager.AppSettings["Password"]);
+                          ConfigurationManager.AppSettings["Server"],
+                          ConfigurationManager.AppSettings["Database"],
+                          ConfigurationManager.AppSettings["UserId"],
+                          ConfigurationManager.AppSettings["Password"]);
 
         // Hashtable to store cached parameters
-        private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
+        private static readonly Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
 
         /// <summary>
         /// Execute a SqlCommand (that returns no resultset) against the database specified in the connection string 
@@ -39,13 +38,14 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>an int representing the number of rows affected by the command</returns>
-        public static int ExecuteNonQuery(string connectionString, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static int ExecuteNonQuery(string connectionString, CommandType cmdType, string cmdText,
+                                          params SqlParameter[] commandParameters)
         {
             try
             {
-                SqlCommand cmd = new SqlCommand();
+                var cmd = new SqlCommand();
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (var conn = new SqlConnection(connectionString))
                 {
                     PrepareCommand(cmd, conn, null, cmdType, cmdText, commandParameters);
                     int val = cmd.ExecuteNonQuery();
@@ -73,10 +73,10 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>an int representing the number of rows affected by the command</returns>
-        public static int ExecuteNonQuery(SqlConnection connection, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static int ExecuteNonQuery(SqlConnection connection, CommandType cmdType, string cmdText,
+                                          params SqlParameter[] commandParameters)
         {
-
-            SqlCommand cmd = new SqlCommand();
+            var cmd = new SqlCommand();
 
             PrepareCommand(cmd, connection, null, cmdType, cmdText, commandParameters);
             int val = cmd.ExecuteNonQuery();
@@ -97,9 +97,10 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>an int representing the number of rows affected by the command</returns>
-        public static int ExecuteNonQuery(SqlTransaction trans, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static int ExecuteNonQuery(SqlTransaction trans, CommandType cmdType, string cmdText,
+                                          params SqlParameter[] commandParameters)
         {
-            SqlCommand cmd = new SqlCommand();
+            var cmd = new SqlCommand();
             PrepareCommand(cmd, trans.Connection, trans, cmdType, cmdText, commandParameters);
             int val = cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
@@ -119,10 +120,11 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>A SqlDataReader containing the results</returns>
-        public static SqlDataReader ExecuteReader(string connectionString, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static SqlDataReader ExecuteReader(string connectionString, CommandType cmdType, string cmdText,
+                                                  params SqlParameter[] commandParameters)
         {
-            SqlCommand cmd = new SqlCommand();
-            SqlConnection conn = new SqlConnection(connectionString);
+            var cmd = new SqlCommand();
+            var conn = new SqlConnection(connectionString);
             cmd.CommandTimeout = 180;
             // we use a try/catch here because if the method throws an exception we want to 
             // close the connection throw code, because no datareader will exist, hence the 
@@ -154,11 +156,12 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
-        public static object ExecuteScalar(string connectionString, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static object ExecuteScalar(string connectionString, CommandType cmdType, string cmdText,
+                                           params SqlParameter[] commandParameters)
         {
-            SqlCommand cmd = new SqlCommand();
+            var cmd = new SqlCommand();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (var connection = new SqlConnection(connectionString))
             {
                 PrepareCommand(cmd, connection, null, cmdType, cmdText, commandParameters);
                 object val = cmd.ExecuteScalar();
@@ -180,17 +183,16 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="commandText">the stored procedure name or T-SQL command</param>
         /// <param name="commandParameters">an array of SqlParamters used to execute the command</param>
         /// <returns>An object that should be converted to the expected type using Convert.To{Type}</returns>
-        public static object ExecuteScalar(SqlConnection connection, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static object ExecuteScalar(SqlConnection connection, CommandType cmdType, string cmdText,
+                                           params SqlParameter[] commandParameters)
         {
-
-            SqlCommand cmd = new SqlCommand();
+            var cmd = new SqlCommand();
 
             PrepareCommand(cmd, connection, null, cmdType, cmdText, commandParameters);
             object val = cmd.ExecuteScalar();
             cmd.Parameters.Clear();
             return val;
         }
-
 
 
         /// <summary>
@@ -204,15 +206,15 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         public static int Insert(string connectionString, SqlCreator creator)
         {
             string sql = creator.GetInsertSql();
-            SqlParameter[] par = new SqlParameter[creator.Columns.Length + 1];
+            var par = new SqlParameter[creator.Columns.Length + 1];
             par[0] = MakeOutputParam("@Id", SqlDbType.Int, 4);
             for (int i = 0; i < creator.Columns.Length; i++)
             {
                 Column parm = creator.Columns[i];
-                par[i + 1] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i + 1] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
-            if (SqlHelper.ExecuteNonQuery(connectionString, CommandType.Text, sql, par) > 0)
+            if (ExecuteNonQuery(connectionString, CommandType.Text, sql, par) > 0)
             {
                 try
                 {
@@ -237,12 +239,12 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns></returns>
         public static SqlParameter[] GetParameterByColumns(Column[] columns)
         {
-            SqlParameter[] par = new SqlParameter[columns.Length + 1];
+            var par = new SqlParameter[columns.Length + 1];
             par[par.Length - 1] = MakeOutputParam("@OrderId", SqlDbType.Int, 4);
             for (int i = 0; i < columns.Length; i++)
             {
                 Column parm = columns[i];
-                par[i] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
             return par;
@@ -258,20 +260,20 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         public static int Update(string connectionString, SqlCreator creator)
         {
             string sql = creator.GetUpdateSql();
-            SqlParameter[] par = new SqlParameter[creator.Columns.Length + creator.WhereColumns.Length];
+            var par = new SqlParameter[creator.Columns.Length + creator.WhereColumns.Length];
             for (int i = 0; i < creator.Columns.Length; i++)
             {
                 Column parm = creator.Columns[i];
-                par[i] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
             for (int i = 0; i < creator.WhereColumns.Length; i++)
             {
                 Column parm = creator.WhereColumns[i];
-                par[i + creator.Columns.Length] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i + creator.Columns.Length] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
-            return SqlHelper.ExecuteNonQuery(connectionString, CommandType.Text, sql, par);
+            return ExecuteNonQuery(connectionString, CommandType.Text, sql, par);
         }
 
 
@@ -284,14 +286,14 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         public static int Delete(string connectionString, SqlCreator creator)
         {
             string sql = creator.GetDeleteSql();
-            SqlParameter[] par = new SqlParameter[creator.WhereColumns.Length];
+            var par = new SqlParameter[creator.WhereColumns.Length];
             for (int i = 0; i < creator.WhereColumns.Length; i++)
             {
                 Column parm = creator.WhereColumns[i];
-                par[i] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
-            return SqlHelper.ExecuteNonQuery(connectionString, CommandType.Text, sql, par);
+            return ExecuteNonQuery(connectionString, CommandType.Text, sql, par);
         }
 
 
@@ -304,11 +306,11 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         public static SqlDataReader SelectReader(string connectionString, SqlCreator creator)
         {
             string sql = creator.GetSelectSql();
-            SqlParameter[] par = new SqlParameter[creator.WhereColumns.Length];
+            var par = new SqlParameter[creator.WhereColumns.Length];
             for (int i = 0; i < creator.WhereColumns.Length; i++)
             {
                 Column parm = creator.WhereColumns[i];
-                par[i] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
             return ExecuteReader(connectionString, CommandType.Text, sql, par);
@@ -323,7 +325,8 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="creator"></param>
         /// <returns></returns>
         public static SqlDataReader SelectReader(string connectionString, string condition,
-             SqlCreator creator, PageParam page, out SqlParameter count, out SqlParameter total)
+                                                 SqlCreator creator, PageParam page, out SqlParameter count,
+                                                 out SqlParameter total)
         {
             if (string.IsNullOrEmpty(creator.PrimaryKey))
             {
@@ -336,17 +339,18 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                 orderBy = page.OrderBy + " " + page.OrderType;
             }
 
-            SqlParameter[] par = new SqlParameter[] { 
-                MakeOutputParam("@PageCount", SqlDbType.Int,4),
-                MakeOutputParam("@TotalRecords", SqlDbType.Int,4),
-                MakeInputParam("@TableName", SqlDbType.VarChar, 255,creator.TableName),
-                MakeInputParam("@PrimaryKey", SqlDbType.VarChar,255, creator.PrimaryKey),
-                MakeInputParam("@Condition", SqlDbType.VarChar,2000,condition),
-                MakeInputParam("@OrderBy", SqlDbType.VarChar,500,orderBy),
-                MakeInputParam("@GroupBy", SqlDbType.VarChar,255,creator.GroupBy),
-                MakeInputParam("@PageIndex", SqlDbType.Int,4,page.Index),
-                MakeInputParam("@PageSize", SqlDbType.Int,4,page.Size)
-            };
+            var par = new[]
+                          {
+                              MakeOutputParam("@PageCount", SqlDbType.Int, 4),
+                              MakeOutputParam("@TotalRecords", SqlDbType.Int, 4),
+                              MakeInputParam("@TableName", SqlDbType.VarChar, 255, creator.TableName),
+                              MakeInputParam("@PrimaryKey", SqlDbType.VarChar, 255, creator.PrimaryKey),
+                              MakeInputParam("@Condition", SqlDbType.VarChar, 2000, condition),
+                              MakeInputParam("@OrderBy", SqlDbType.VarChar, 500, orderBy),
+                              MakeInputParam("@GroupBy", SqlDbType.VarChar, 255, creator.GroupBy),
+                              MakeInputParam("@PageIndex", SqlDbType.Int, 4, page.Index),
+                              MakeInputParam("@PageSize", SqlDbType.Int, 4, page.Size)
+                          };
 
             count = par[0];
             total = par[1];
@@ -363,28 +367,28 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns></returns>
         public static bool Exists(string connectionString, SqlCreator creator)
         {
-            creator.Columns = new Column[] { 
-                new Column("count(1)")
-            };
+            creator.Columns = new[]
+                                  {
+                                      new Column("count(1)")
+                                  };
 
 
-            SqlParameter[] par = new SqlParameter[creator.WhereColumns.Length];
+            var par = new SqlParameter[creator.WhereColumns.Length];
             for (int i = 0; i < creator.WhereColumns.Length; i++)
             {
                 Column parm = creator.WhereColumns[i];
-                par[i] = SqlHelper.MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
+                par[i] = MakeInputParam(parm.ParameterName, parm.DbType, parm.Size, parm.Value);
             }
 
 
-            object obj = SqlHelper.ExecuteScalar(connectionString, CommandType.Text,
-                creator.GetSelectSql(),
-                par);
+            object obj = ExecuteScalar(connectionString, CommandType.Text,
+                                       creator.GetSelectSql(),
+                                       par);
 
             int count = int.Parse(obj.ToString());
 
             return count > 0;
         }
-
 
 
         /// <summary>
@@ -397,20 +401,19 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
             parmCache[cacheKey] = commandParameters;
         }
 
-        public static DataTable GetTable(string connectionString, CommandType cmdType, string cmdText, params SqlParameter[] commandParameters)
+        public static DataTable GetTable(string connectionString, CommandType cmdType, string cmdText,
+                                         params SqlParameter[] commandParameters)
         {
-            DataTable dt = new DataTable();
-            SqlCommand cmd = new SqlCommand();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            var dt = new DataTable();
+            var cmd = new SqlCommand();
+            using (var conn = new SqlConnection(connectionString))
             {
                 PrepareCommand(cmd, conn, null, cmdType, cmdText, commandParameters);
-                SqlDataAdapter da = new SqlDataAdapter();
+                var da = new SqlDataAdapter();
                 da.SelectCommand = cmd;
                 da.Fill(dt);
             }
             return dt;
-
-
         }
 
         /// <summary>
@@ -420,15 +423,15 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns>Cached SqlParamters array</returns>
         public static SqlParameter[] GetCachedParameters(string cacheKey)
         {
-            SqlParameter[] cachedParms = (SqlParameter[])parmCache[cacheKey];
+            var cachedParms = (SqlParameter[]) parmCache[cacheKey];
 
             if (cachedParms == null)
                 return null;
 
-            SqlParameter[] clonedParms = new SqlParameter[cachedParms.Length];
+            var clonedParms = new SqlParameter[cachedParms.Length];
 
             for (int i = 0, j = cachedParms.Length; i < j; i++)
-                clonedParms[i] = (SqlParameter)((ICloneable)cachedParms[i]).Clone();
+                clonedParms[i] = (SqlParameter) ((ICloneable) cachedParms[i]).Clone();
 
             return clonedParms;
         }
@@ -442,9 +445,9 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <param name="cmdType">Cmd type e.g. stored procedure or text</param>
         /// <param name="cmdText">Command text, e.g. Select * from Products</param>
         /// <param name="cmdParms">SqlParameters to use in the command</param>
-        private static void PrepareCommand(SqlCommand cmd, SqlConnection conn, SqlTransaction trans, CommandType cmdType, string cmdText, SqlParameter[] cmdParms)
+        private static void PrepareCommand(SqlCommand cmd, SqlConnection conn, SqlTransaction trans, CommandType cmdType,
+                                           string cmdText, SqlParameter[] cmdParms)
         {
-
             if (conn.State != ConnectionState.Open)
                 conn.Open();
 
@@ -494,12 +497,12 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                 value = DBNull.Value;
             }
 
-            if (value.GetType() == typeof(string) && string.IsNullOrEmpty(value.ToString()))
+            if (value.GetType() == typeof (string) && string.IsNullOrEmpty(value.ToString()))
             {
                 value = DBNull.Value;
             }
 
-            SqlParameter par = new SqlParameter(paramName, dbType);
+            var par = new SqlParameter(paramName, dbType);
             if (size > 0)
             {
                 par.Size = size;
@@ -519,13 +522,10 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns></returns>
         public static SqlParameter MakeOutputParam(string paramName, SqlDbType dbType, int size)
         {
-            SqlParameter par = new SqlParameter(paramName, dbType, size);
+            var par = new SqlParameter(paramName, dbType, size);
             par.Direction = ParameterDirection.Output;
             return par;
         }
-
-
-
     }
 
     /// <summary>
@@ -533,13 +533,13 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
     /// </summary>
     public class SqlCreator
     {
-        public string TableName = "";
-        public bool TableNameIsSubQuery = false;          //表名是否为一个子查询。若为子查询，则不能在两端加 [] 符号
-        public string PrimaryKey = "";
-        public Column[] Columns = new Column[] { };
-        public Column[] WhereColumns = new Column[] { };
-        public string OrderBy = "";
+        public Column[] Columns = new Column[] {};
         public string GroupBy = "";
+        public string OrderBy = "";
+        public string PrimaryKey = "";
+        public string TableName = "";
+        public bool TableNameIsSubQuery; //表名是否为一个子查询。若为子查询，则不能在两端加 [] 符号
+        public Column[] WhereColumns = new Column[] {};
 
         public SqlCreator(string tableName)
         {
@@ -590,8 +590,6 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         }
 
 
-
-
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -607,14 +605,13 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         }
 
 
-
         /// <summary>
         /// 获取插入SQL语句
         /// </summary>
         /// <returns></returns>
         public string GetInsertSql()
         {
-            StringBuilder s = new StringBuilder();
+            var s = new StringBuilder();
             s.Append("insert into " + TableName + "(");
             for (int i = 0; i < Columns.Length - 1; i++)
             {
@@ -640,7 +637,7 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns></returns>
         public string GetUpdateSql()
         {
-            StringBuilder s = new StringBuilder();
+            var s = new StringBuilder();
             s.Append("update " + TableName + " set ");
             for (int i = 0; i < Columns.Length - 1; i++)
             {
@@ -657,7 +654,8 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                     s.Append(WhereColumns[i].ColumnName + "=" + WhereColumns[i].ParameterName + " and ");
                 }
 
-                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" + WhereColumns[WhereColumns.Length - 1].ParameterName);
+                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" +
+                         WhereColumns[WhereColumns.Length - 1].ParameterName);
             }
             return s.ToString();
         }
@@ -669,7 +667,7 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns>返回字符串，改字符串为执行删除操作的语句</returns>
         public string GetDeleteSql()
         {
-            StringBuilder s = new StringBuilder();
+            var s = new StringBuilder();
             s.Append("delete from " + TableName + "");
             if (WhereColumns.Length > 0)
             {
@@ -680,7 +678,8 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                     s.Append(WhereColumns[i].ColumnName + "=" + WhereColumns[i].ParameterName + " and ");
                 }
 
-                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" + WhereColumns[WhereColumns.Length - 1].ParameterName);
+                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" +
+                         WhereColumns[WhereColumns.Length - 1].ParameterName);
             }
             return s.ToString();
         }
@@ -692,7 +691,7 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
         /// <returns></returns>
         public string GetSelectSql()
         {
-            StringBuilder s = new StringBuilder();
+            var s = new StringBuilder();
             s.Append("select ");
 
             //若选择列为为空，则选择所有列
@@ -720,7 +719,8 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                     s.Append(WhereColumns[i].ColumnName + "=" + WhereColumns[i].ParameterName + " and ");
                 }
 
-                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" + WhereColumns[WhereColumns.Length - 1].ParameterName);
+                s.Append(WhereColumns[WhereColumns.Length - 1].ColumnName + "=" +
+                         WhereColumns[WhereColumns.Length - 1].ParameterName);
             }
 
             if (!string.IsNullOrEmpty(OrderBy))
@@ -738,9 +738,9 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
     public class Column
     {
         public string ColumnName;
-        public string ParameterName;
         public SqlDbType DbType;
         public ParameterDirection Direction;
+        public string ParameterName;
         public int Size;
         public object Value;
 
