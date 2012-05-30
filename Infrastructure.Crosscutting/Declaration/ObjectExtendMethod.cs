@@ -499,6 +499,23 @@ namespace Infrastructure.Crosscutting.Declaration
             return result; 
         }
 
+        /// <summary>
+        /// 避免了用StringBuilder的性能问题
+        /// </summary>
+        /// <param name="format"></param>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public static String Format(this String format, params object[] args)
+        {
+            if (format == null || args == null)
+                throw new ArgumentNullException((format == null) ? "format" : "args");
+
+            var capacity = format.Length + args.Where(p => p != null).Select(p => p.ToString()).Sum(p => p.Length);
+            var stringBuilder = new StringBuilder(capacity);
+            stringBuilder.AppendFormat(format, args);
+            return stringBuilder.ToString();
+        }
+
         #endregion
 
         #region IEnumerable扩展方法
