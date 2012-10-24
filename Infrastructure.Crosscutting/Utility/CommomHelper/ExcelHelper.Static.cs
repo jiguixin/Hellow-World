@@ -110,6 +110,8 @@ namespace Infrastructure.Crosscutting.Utility.CommomHelper
                 string strExcel = "select * from [" + s + "]";
                 myCommand = new OleDbDataAdapter(strExcel, conn);
                 dt = new DataTable();
+                if (!string.IsNullOrEmpty(s) && s.Length > 1)
+                    dt.TableName = s.Remove(s.Length - 1, 1);
                 myCommand.Fill(dt);
                 ds.Tables.Add(dt);
             }
